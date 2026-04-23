@@ -84,9 +84,9 @@ ul {
 }
 
 .topbar-inner {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,9 +118,9 @@ ul {
 }
 
 .nav-inner {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 4rem;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -128,42 +128,64 @@ ul {
 }
 
 /* Logo */
+/* Logo */
+/* Logo 'Virtual Crop' container to hide white margins */
 .nav-logo {
   display: flex;
   align-items: center;
-}
-
-.logo-box {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo-svg {
-  width: 52px;
-  height: 60px;
-  flex-shrink: 0;
+  height: 70px;
+  gap: 0;
 }
 
 .logo-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
+  line-height: 0.9;
+  text-align: left;
+  text-transform: uppercase;
 }
 
-.logo-name {
-  font-size: 1.6rem;
-  font-weight: 900;
+.logo-main {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: normal;
   color: var(--black);
-  letter-spacing: -0.5px;
+  letter-spacing: 0.5px;
 }
 
 .logo-sub {
-  font-size: 0.72rem;
-  color: var(--gray-500);
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--orange);
+  letter-spacing: 1px;
+  margin-top: 1px;
+}
+
+.logo-img-wrap {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.main-logo {
+  height: 115px;
+  width: auto;
+  object-fit: contain;
+  transform: scale(1.92);
+  transition: transform 0.3s ease;
+}
+
+/* Footer can handle more vertical space, but we'll fit it better too */
+.footer-logo {
+  height: 120px;
+  width: auto;
+  margin-bottom: 1.5rem;
+  object-fit: contain;
 }
 
 /* Nav Links */
@@ -847,7 +869,7 @@ ul {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
@@ -870,7 +892,7 @@ ul {
 
 .product-img-wrap {
   position: relative;
-  padding: 20px;
+  padding: 1.5rem;
   background: var(--gray-100);
   aspect-ratio: 1;
   overflow: hidden;
@@ -881,11 +903,11 @@ ul {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
 }
 
 .product-card:hover .product-img-wrap img {
-  transform: scale(1.06);
+  transform: scale(1.1) translateY(-10px);
 }
 
 .product-badge {
@@ -1004,6 +1026,9 @@ ul {
   color: var(--black);
   margin-bottom: 6px;
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product-info h3:hover {
@@ -1076,7 +1101,7 @@ ul {
 .main-img {
   background: var(--gray-100);
   border-radius: var(--radius);
-  padding: 32px;
+  padding: 2.5rem;
   margin-bottom: 12px;
   aspect-ratio: 1;
   display: flex;
@@ -1994,19 +2019,36 @@ ul {
   margin-bottom: 3rem;
 }
 
-.footer-brand .logo-svg {
-  width: 46px;
-  height: 53px;
-  margin-bottom: 12px;
+.footer-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
 }
 
-.footer-brand .logo-name {
+.footer-brand .logo-text {
+  text-align: left;
+}
+
+.footer-brand .logo-main {
   color: var(--white);
-  font-size: 1.4rem;
+  font-size: 2.2rem;
 }
 
 .footer-brand .logo-sub {
-  color: var(--gray-500);
+  color: var(--orange);
+  font-size: 0.8rem;
+}
+
+.footer-brand .logo-img-wrap {
+  width: 60px;
+  height: 60px;
+  margin-right: 0;
+}
+
+.footer-brand .main-logo {
+  height: 120px;
+  transform: scale(2.2);
 }
 
 .footer-brand p {

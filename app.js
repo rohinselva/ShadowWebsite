@@ -55,61 +55,94 @@ const DB = {
     { name: 'Vermeiren', tagline: 'Mobility Solutions Since 1956', color: '#1A237E', initial: 'V', website: 'https://www.vermeiren.com' },
     { name: 'Invacare', tagline: "Making Life's Experiences Possible", color: '#1B5E20', initial: 'Inv', website: 'https://www.invacare.com' }
   ],
-
   products: [
     {
-      id: 1, name: "Freedom 6000 Recliner", brand: "Freedom", category: "manual",
-      price: 0, mrp: 0, status: "instock", stock: 10,
-      image: "assets/freedom_recliner.png",
-      badge: "Clinical Favorite",
-      desc: "A highly versatile manual wheelchair with a 3-position reclining backrest and self-propelled hand rims. Ideal for customers requiring intermittent postural changes during the day.",
-      specs: { "Drive Type": "Self-Propelled", "Recline": "3-Position Adjustable", "Backrest": "High Back Support", "Frame": "Reinforced Steel/Alloy", "Brakes": "Dual Hand-rim & Attendant", "Weight Capacity": "120 kg", "Armrests": "Detachable", "Footrests": "Swing-away & Elevating", "Warranty": "2 Years", "Delivery": "5–7 Working Days" },
-      features: ["Multiple reclining positions", "High back support", "Elevating leg rests", "Self-propulsion rims", "Sturdy reinforced frame"]
+      id: 1, name: "Forza Freedom 3000", brand: "Forza", category: "manual",
+      status: "instock", stock: 10, image: "assets/Forza Freedom 3000.jpg",
+      badge: "Clinical Standard", price: 0, mrp: 0,
+      desc: "A lightweight and reliable manual wheelchair built with a high-strength aluminium alloy frame. Designed for daily use with enhanced comfort upholstery and precision rear wheels.",
+      specs: { "Frame": "Aluminium Alloy", "Weight": "16 kg", "Capacity": "110 kg", "Folding": "Double Crossbar", "Armrests": "Detachable", "Footrests": "Swing-away" },
+      features: ["Precision bearing wheels", "Breathable nylon upholstery", "Double crossbar stability", "Quick-response brakes"]
     },
     {
-      id: 2, name: "Freedom Junior Transit", brand: "Freedom", category: "custom",
-      price: 0, mrp: 0, status: "instock", stock: 5,
-      image: "assets/freedom_junior.png",
-      badge: "Paediatric",
-      desc: "Specialised child-sized transit wheelchair with integrated trunk supports and a foot brake. Shadow customises the padding and fit based on the child's growth and postural requirements.",
-      specs: { "User Profile": "Paediatric / Child", "Base Type": "Transit (Attendant Propelled)", "Brakes": "Integrated Foot Brake", "Supports": "Integrated Trunk & lateral", "Backrest": "Reclining Option", "Weight Capacity": "65 kg", "Frame Weight": "14 kg", "Customisation": "Measurement-based fitting", "Warranty": "1 Year", "Delivery": "7–10 Working Days" },
-      features: ["Integrated trunk support", "Safety foot brake", "Child-friendly sizing", "Soft clinical padding", "Compact transit design"]
+      id: 2, name: "Forza Freedom 4000 (Fixed)", brand: "Forza", category: "manual",
+      status: "instock", stock: 8, image: "assets/Forza Freedom 4000 (Fixed Backrest).jpeg",
+      badge: "Durable Choice", price: 0, mrp: 0,
+      desc: "The Freedom 4000 features a fixed backrest for maximum stability and long-term durability. It is the workhorse of our manual range, preferred for clinical and hospital environments.",
+      specs: { "Backrest": "Fixed Support", "Frame": "Reinforced Steel", "Seat Width": "18-20 inches", "Brakes": "Dual Rear Lock", "Rear Wheels": "Mag Wheels", "Weight": "18.5 kg" },
+      features: ["Fixed backrest stability", "Heavy-duty frame", "Puncture-proof MAG wheels", "Anatomical armrests"]
     },
     {
-      id: 3, name: "Freedom CP Multipurpose", brand: "Freedom", category: "custom",
-      price: 0, mrp: 0, status: "instock", stock: 3,
-      image: "assets/freedom_cp.png",
-      badge: "High Support",
-      desc: "A multi-functional wheelchair designed for complex cerebral palsy needs. Features include head support, lateral thoracic support, and a tilt-in-space mechanism for pressure management.",
-      specs: { "Indication": "Cerebral Palsy / Complex Needs", "Mechanism": "Tilt-in-Space / Recline", "Head Support": "Multi-adjustable Contour", "Thoracic Support": "Lateral Pads Included", "Leg Support": "Elevating & Angle Adjustable", "Frame": "Modular High-Stability", "Weight Capacity": "85 kg", "Assembly": "Shadow Expert Fitting", "Warranty": "2 Years", "Delivery": "Consult for assessment" },
-      features: ["Tilt-in-space mechanism", "Thoracic lateral supports", "Adjustable head support", "Elevating leg rests", "Pressure relief system"]
+      id: 3, name: "Forza Freedom 5000", brand: "Forza", category: "manual",
+      status: "instock", stock: 12, image: "assets/Forza Freedom 5000 STD.jpeg",
+      badge: "Premium Manual", price: 0, mrp: 0,
+      desc: "A premium manual wheelchair that combines sleek aesthetics with clinical functionality. Features a lightweight chassis and ergonomic seating for active independent users.",
+      specs: { "Brand": "Forza Freedom", "Chassis": "T6 Aluminium", "Casters": "6-inch Solid", "Rear Wheels": "Pneumatic/Solid options", "Weight": "14.2 kg", "Finish": "Matte Black" },
+      features: ["Ultra-light chassis", "Ergonomic propulsion rims", "Modern matte finish", "Compact folding"]
     },
     {
-      id: 4, name: "Invacare Action Standard", brand: "Invacare", category: "manual",
-      price: 0, mrp: 0, status: "instock", stock: 12,
-      image: "assets/invacare_action.png",
-      badge: "Lightweight",
-      desc: "A globally trusted standard in manual mobility. Lightweight, foldable, and highly reliable. Shadow adapts the Action series with custom seating and pressure cushions for daily comfort.",
-      specs: { "Brand": "Invacare", "Model": "Action Series", "Frame type": "Foldable Aluminium", "Weight": "14.5 kg", "Weight Capacity": "125 kg", "Rear Wheels": "Quick-release option", "Upholstery": "Nylon / Wipe-clean", "Sizes": "15\" to 19\" seat widths", "Warranty": "1 Year on Frame", "Delivery": "3–5 Working Days" },
-      features: ["Foldable aluminium frame", "Lightweight design", "Quick-release wheels", "Shadow custom seating", "Easy vehicle transport"]
+      id: 4, name: "Forza Freedom 6000 (Recliner)", brand: "Forza", category: "manual",
+      status: "instock", stock: 5, image: "assets/Forza Freedom 6000 (Recliner).jpeg",
+      badge: "Posture Support", price: 0, mrp: 0,
+      desc: "The Freedom 6000 Recliner is designed for users who require frequent changes in posture. High back support and smooth reclining mechanism provide relief and prevent pressure sores.",
+      specs: { "Recline Range": "Up to 160°", "Head Support": "Integrated Contour", "Leg Support": "Elevating Footrests", "Frame": "Steel Reinforced", "Brakes": "Attendant & Hand-rim", "Cushion": "High Density" },
+      features: ["Full recline mechanism", "Elevating leg support", "Contoured headrest", "High-stress durability"]
     },
     {
-      id: 5, name: "Arise Mechanical Stand-up Wheelchair", brand: "Arise", category: "manual",
-      price: 0, mrp: 0, status: "instock", stock: 4,
-      image: "assets/arise_standup.png",
-      badge: "Clinical Specialty",
-      desc: "A globally acclaimed manual stand-up wheelchair. Features a mechanical linkage system that allows the user to elevate themselves to a 75-degree standing position safely and affordably.",
-      specs: { "Function": "Mechanical Stand-up (75°)", "Frame": "Reinforced Steel (Orange)", "Wheels": "Standard Spoke with Hand-rims", "Mechanism": "Manual Gas-Spring Assisted", "Indication": "Spinal Cord Injury / Pressure Management", "Stability": "Anti-tip Casters included", "Weight Capacity": "100 kg", "Warranty": "2 Years", "Delivery": "Consult for assessment" },
-      features: ["Safe 75° standing position", "Improves bone density & circulation", "Gas-spring assisted lift", "Anti-tip stability casters", "Cost-effective mechanical design"]
+      id: 5, name: "Forza Freedom CP (Cerebral Palsy)", brand: "Forza", category: "manual",
+      status: "instock", stock: 4, image: "assets/Forza Freedom CP.jpeg",
+      badge: "Paediatric Spec", price: 0, mrp: 0,
+      desc: "A specialized paediatric/adult wheelchair for Cerebral Palsy management. Features tilt-in-space, lateral trunk supports, and a 5-point harness for maximum postural stability.",
+      specs: { "Mechanism": "Tilt-in-Space / Recline", "Supports": "Thoracic Lateral + Headrest", "Safety": "5-Point Harness included", "Seat": "Anatomical Contoured", "Wheels": "Small Transit Casters", "Adjustability": "Growth-flexible" },
+      features: ["Postural lateral supports", "Tilt-in-space mechanism", "Head & neck alignment", "Growth adjustability"]
     },
     {
-      id: 6, name: "Children Self-propelled Wheelchair", brand: "Freedom", category: "custom",
-      price: 0, mrp: 0, status: "instock", stock: 6,
-      image: "assets/children_propelled.png",
-      badge: "Paediatric",
-      desc: "A lightweight, customisable self-propelled wheelchair designed specifically for active children. Features adjustable postural supports and high backrest for maximum comfort.",
-      specs: { "User Profile": "Paediatric (3–12 years)", "Drive Type": "Self-Propelled", "Frame": "Lightweight High-strength Alloy", "Supports": "Lateral trunk & Headrest included", "Safety": "5-point harness optional", "Weight": "12.5 kg", "Customisation": "Full clinical fitting", "Warranty": "1 Year", "Delivery": "7–10 Working Days" },
-      features: ["Paediatric ergonomics", "Self-propulsion hand rims", "Adjustability for growth", "Trunk & head support", "Safety harness included"]
+      id: 6, name: "Forza Freedom Junior Recliner", brand: "Forza", category: "manual",
+      status: "instock", stock: 6, image: "assets/Forza Freedom Junior Recliner.jpeg",
+      badge: "Paediatric Choice", price: 0, mrp: 0,
+      desc: "A dedicated paediatric reclining wheelchair that provides clinical comfort for children. Lightweight but high-support, with vibrant scaling and adjustable leg rests.",
+      specs: { "User Profile": "Junior / Child", "Recline": "Adjustable Backrest", "Frame": "Aluminium/Steel Hybrid", "Weight": "14 kg", "Legrest": "Elevating & Angle-Adjustable", "Warranty": "2 Years" },
+      features: ["Child-specific ergonomics", "Comfort padding", "Safe recline angles", "Vibrant clinical finish"]
+    },
+    {
+      id: 7, name: "Invacare Action 2 NG STD", brand: "Invacare", category: "manual",
+      status: "instock", stock: 15, image: "assets/Invacare Action 2 NG STD.jpeg",
+      badge: "Global Trusted", price: 0, mrp: 0,
+      desc: "The Invacare Action 2 is a globally trusted standard for manual mobility. Offering reliability, customizability, and ease of transport for active users.",
+      specs: { "Brand": "Invacare", "Series": "Action NG", "Frame": "Foldable Aluminium", "Rear Wheels": "Quick-release Spoke", "Custom": "Shadow Seat Adaptation", "Weight": "15 kg" },
+      features: ["Quick-release rear wheels", "Dual-crossbar folding", "Shadow-ready seating", "Reliable durability"]
+    },
+    {
+      id: 8, name: "Invacare Rea Clematis Pro", brand: "Invacare", category: "manual",
+      status: "instock", stock: 3, image: "assets/Invacare Rea Clematis Pro.jpeg",
+      badge: "Clinical Elite", price: 0, mrp: 0,
+      desc: "A premium clinical tilt-in-space wheelchair designed for complex care. The Rea Clematis Pro provides exceptional pressure redistribution and long-term postural support.",
+      specs: { "Brand": "Invacare", "Class": "Tilt-in-Space", "Tilt Range": "-1° to 25°", "Backrest Recline": "30° Stepless", "Seating": "Flo-shape Cushion", "Control": "Attendant Operated" },
+      features: ["Clinical pressure relief", "Stepless recline control", "Flo-shape postural seating", "Stable wheelbase"]
+    },
+    {
+      id: 9, name: "Stair Climber (Electric)", brand: "Shadow", category: "electric",
+      status: "instock", stock: 2, image: "assets/Stair Climber.jpeg",
+      badge: "Innovation", price: 0, mrp: 0,
+      desc: "Revolutionary mobility solution for multi-storey buildings. This electric stair climber features a caterpillar track system to safely transport users up and down stairs.",
+      specs: { "Type": "Tracked Stair Climber", "Motor": "High-torque Electric", "Track": "Anti-slip Rubber", "Battery": "Lithium Rechargeable", "Capacity": "120 kg", "Operation": "Single Attendant" },
+      features: ["Safe caterpillar tracks", "Foldable into car boot", "Adjustable guide handle", "Safety X-belt included"]
+    },
+    {
+      id: 10, name: "Forza Freedom Urja Pro", brand: "Forza", category: "electric",
+      status: "instock", stock: 5, image: "assets/Forza Freedom Urja Pro.jpeg",
+      badge: "Power Choice", price: 0, mrp: 0,
+      desc: "The Urja Pro is a high-performance electric wheelchair with a sophisticated joystick control system and long-range power. Built for rugged urban mobility.",
+      specs: { "Drive": "Rear-wheel Electric", "Controller": "Interactive Joystick", "Speed": "Up to 8 km/h", "Range": "15-20 km", "Climbing Angle": "Up to 12°", "Weight": "45 kg" },
+      features: ["Interactive joystick control", "Dual powerful motors", "Rugged shock absorbers", "Comfort captain's seat"]
+    },
+    {
+      id: 11, name: "Forza Freedom Urja Lite", brand: "Forza", category: "electric",
+      status: "instock", stock: 7, image: "assets/Forza Freedom Urja Lite.jpeg",
+      badge: "Lightweight Electric", price: 0, mrp: 0,
+      desc: "A lightweight, foldable electric wheelchair that bridges the gap between manual portability and power mobility. Perfect for travel and shopping malls.",
+      specs: { "Type": "Power Mobility", "Weight": "24 kg (with battery)", "Folding": "Single-button fold", "Battery": "Lithium-Ion", "Motors": "Brushless DC", "Casters": "Solid 8-inch" },
+      features: ["Featherweight construction", "Brushless motor efficiency", "Ultra-compact folding", "Travel-safe battery"]
     }
   ],
 
@@ -132,7 +165,7 @@ const State = {
   cart: JSON.parse(localStorage.getItem('sw_cart') || '[]'),
   wishlist: JSON.parse(localStorage.getItem('sw_wishlist') || '[]'),
   user: JSON.parse(localStorage.getItem('sw_user') || 'null'),
-  products: (localStorage.getItem('sw_products_v4') && JSON.parse(localStorage.getItem('sw_products_v4')).length) ? JSON.parse(localStorage.getItem('sw_products_v4')) : DB.products,
+  products: (localStorage.getItem('sw_products_v14') && JSON.parse(localStorage.getItem('sw_products_v14')).length) ? JSON.parse(localStorage.getItem('sw_products_v14')) : DB.products,
   orders: (localStorage.getItem('sw_orders') && JSON.parse(localStorage.getItem('sw_orders')).length) ? JSON.parse(localStorage.getItem('sw_orders')) : DB.orders,
   registeredUsers: (localStorage.getItem('sw_registered_users') && JSON.parse(localStorage.getItem('sw_registered_users')).length) ? JSON.parse(localStorage.getItem('sw_registered_users')) : DB.registeredUsers,
 
@@ -148,7 +181,7 @@ const State = {
     localStorage.setItem('sw_cart', JSON.stringify(this.cart));
     localStorage.setItem('sw_wishlist', JSON.stringify(this.wishlist));
     localStorage.setItem('sw_user', JSON.stringify(this.user));
-    localStorage.setItem('sw_products_v4', JSON.stringify(this.products));
+    localStorage.setItem('sw_products_v14', JSON.stringify(this.products));
     localStorage.setItem('sw_orders', JSON.stringify(this.orders));
     localStorage.setItem('sw_registered_users', JSON.stringify(this.registeredUsers || []));
   },
@@ -473,8 +506,9 @@ const UI = {
 // ===================== HERO SLIDER =====================
 const Hero = {
   slides: [
-    { badge: "India's Trusted Partner", title: "EMPOWERING <span class='highlight'>MOBILITY</span>", sub: "Custom wheelchairs & seating solutions designed around your unique needs.", img: "assets/electric_wc.png", btnLabel: "Shop Electric Wheelchairs", category: "electric" },
-    { badge: "Postural Seating Specialists", title: "BUILT FOR <span class='highlight'>YOUR BODY</span>", sub: "Expert postural assessment and custom seating for maximum comfort and independence.", img: "assets/custom_wc.png", btnLabel: "Custom Seating →", category: "custom" }
+    { badge: "Premium Mobility Choice", title: "EMPOWERING <span class='highlight'>MOBILITY</span>", sub: "Experience next-level independence with our sophisticated electric wheelchairs.", img: "assets/hero_electric.png", btnLabel: "Shop Electric", category: "electric" },
+    { badge: "Manual Excellence", title: "BUILT FOR <span class='highlight'>PRECISION</span>", sub: "Ultra-lightweight frames and ergonomic design for your active lifestyle.", img: "assets/hero_manual.png", btnLabel: "Shop Manual", category: "manual" },
+    { badge: "Shadow Innovation", title: "BEYOND <span class='highlight'>BOUNDARIES</span>", sub: "Revolutionary devices designed to overcome any obstacle, including stairs.", img: "assets/hero_innovation.png", btnLabel: "Explore Technology", category: "electric" }
   ],
 
   render() {
@@ -739,9 +773,7 @@ const Pages = {
             <div class="cat-breadcrumb">${utils.h(p.category.charAt(0).toUpperCase() + p.category.slice(1))} ${p.isRental ? '· Rental' : ''}</div>
             <h1 style="margin-bottom:0.4rem">${utils.h(p.name)}</h1>
             <div class="product-success-meta">
-              <div class="prod-rating">
-                <span class="sales-count">850 <span class="sold-text">Items sold.</span></span>
-              </div>
+
               <div class="detail-badge-wrap">
                 <span class="product-badge-inline ${p.status === 'instock' ? 'badge-instock' : p.status === 'lowstock' ? 'badge-lowstock' : 'badge-outofstock'}">
                   ${p.status === 'instock' ? '✓ In Stock' : p.status === 'lowstock' ? '⚠ Only ' + p.stock + ' left' : '✕ Out of Stock'}
@@ -1629,7 +1661,7 @@ const Pages = {
             <div class="contact-item"><div class="ci-icon">📍</div><div><h5>Address</h5><p>36, Professor Sanjeevi St,<br>Karneeswarapuram, Mylapore,<br>Chennai, Tamil Nadu 600004</p></div></div>
             <div class="contact-item"><div class="ci-icon">📞</div><div><h5>Phone</h5><a href="tel:+919445610803">+91 94456 10803</a></div></div>
             <div class="contact-item"><div class="ci-icon">✉</div><div><h5>Email</h5><a href="mailto:johnson.shadowwheelchairs@outlook.com">johnson.shadowwheelchairs@outlook.com</a></div></div>
-            <div class="contact-item"><div class="ci-icon">🕐</div><div><h5>Working Hours</h5><p>Mon–Sat: 9:00 AM – 6:00 PM<br>Sunday: By Appointment</p></div></div>
+            <div class="contact-item"><div class="ci-icon">🕐</div><div><h5>Working Hours</h5><p>Mon–Sat: 10:30 AM – 5:00 PM<br>Sunday: By Appointment</p></div></div>
             <div style="margin-top:2rem">
               <h5 style="color:var(--orange);font-size:.8rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:.8rem">We Service</h5>
               <p style="font-size:.85rem;line-height:1.7">Chennai & Across India</p>
@@ -1758,19 +1790,15 @@ function renderFooter() {
       <div class="container">
         <div class="footer-grid">
           <div class="footer-brand">
-            <svg class="logo-svg" viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg">
-              <rect width="60" height="70" fill="#F5A000" rx="4"/>
-              <ellipse cx="22" cy="18" rx="5" ry="5" fill="#1C1C1C"/>
-              <path d="M15 28 Q18 22 22 23 L30 25 L26 35 L18 35Z" fill="#1C1C1C"/>
-              <circle cx="40" cy="20" rx="3" ry="3" fill="#1C1C1C"/>
-              <path d="M36 26 Q38 23 40 24 L44 26 L42 33 L36 33Z" fill="#1C1C1C"/>
-              <circle cx="36" cy="42" r="5" fill="none" stroke="#1C1C1C" stroke-width="2"/>
-              <circle cx="48" cy="42" r="5" fill="none" stroke="#1C1C1C" stroke-width="2"/>
-              <path d="M31 33 L36 36 L48 36 L50 42" fill="none" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round"/>
-              <rect x="0" y="56" width="60" height="14" fill="#1C1C1C" rx="0"/>
-              <text x="30" y="67" text-anchor="middle" fill="#F5A000" font-size="9" font-weight="bold" font-family="Arial, sans-serif" letter-spacing="2">SHADOW</text>
-            </svg>
-            <div class="logo-text" style="margin-top:8px"><span class="logo-name">Shadow</span><span class="logo-sub">Wheelchairs & Seating</span></div>
+            <div class="footer-logo-wrap">
+              <div class="logo-img-wrap">
+                <img src="assets/logo.png" alt="Shadow Wheelchairs" class="main-logo">
+              </div>
+              <div class="logo-text">
+                <span class="logo-main">SHADOW</span>
+                <span class="logo-sub">WHEELCHAIRS & SEATING</span>
+              </div>
+            </div>
             <p>Empowering mobility and enriching lives across India, one customer at a time.</p>
           </div>
           <div class="footer-col">
@@ -1795,7 +1823,7 @@ function renderFooter() {
               <li><a href="tel:+919445610803">📞 +91 94456 10803</a></li>
               <li><a href="mailto:johnson.shadowwheelchairs@outlook.com">✉ johnson.shadowwheelchairs@outlook.com</a></li>
               <li><a href="#">📍 36, Professor Sanjeevi St, Mylapore, Chennai – 600004</a></li>
-              <li style="color:#868e96;font-size:.82rem;margin-top:.5rem">Mon–Sat: 9AM – 6PM</li>
+              <li style="color:#868e96;font-size:.82rem;margin-top:.5rem">Mon–Sat: 10:30 AM – 5:00 PM</li>
             </ul>
           </div>
         </div>
