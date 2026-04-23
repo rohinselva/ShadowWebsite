@@ -24,13 +24,3 @@ To revolutionize the accessibility landscape in India by providing high-quality,
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
 </p>
-
-## 📍 Contact Information
-- **📞 Phone:** [+91 94456 10803](tel:+919445610803)
-- **✉️ Email:** [johnson.shadowwheelchairs@outlook.com](mailto:johnson.shadowwheelchairs@outlook.com)
-- **🏢 Address:** 36, Professor Sanjeevi St, Mylapore, Chennai – 600004
-- **🕐 Hours:** Mon–Sat: 10:30 AM – 5:00 PM
-
----
-<p align="center">Made with ❤ for patient care in India</p>
-<p align="center">© 2026 Shadow Wheelchairs & Seating. All Rights Reserved.</p>
