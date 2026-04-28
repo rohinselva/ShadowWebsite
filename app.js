@@ -59,88 +59,110 @@ const DB = {
     {
       id: 1, name: "Forza Freedom 3000", brand: "Forza", category: "manual",
       status: "instock", stock: 10, image: "assets/Forza Freedom 3000.jpg",
-      badge: "Clinical Standard", price: 0, mrp: 0,
+      badge: "Clinical Standard", badge_ta: "மருத்துவத் தரம்", badge_hi: "क्लिनिकल स्टैंडर्ड", price: 0, mrp: 0,
       desc: "A lightweight and reliable manual wheelchair built with a high-strength aluminium alloy frame. Designed for daily use with enhanced comfort upholstery and precision rear wheels.",
+      desc_ta: "உயர்தர அலுமினிய அலாய் பிரேம் கொண்ட இலகுரக மற்றும் நம்பகமான கைமுறை சக்கர நாற்காலி. தினசரி பயன்பாட்டிற்காக வடிவமைக்கப்பட்டுள்ளது.",
+      desc_hi: "उच्च शक्ति वाले एल्यूमीनियम मिश्र धातु फ्रेम के साथ बनाया गया एक हल्का और विश्वसनीय मैनुअल व्हीलचेयर। दैनिक उपयोग के लिए डिज़ाइन किया गया।",
       specs: { "Frame": "Aluminium Alloy", "Weight": "16 kg", "Capacity": "110 kg", "Folding": "Double Crossbar", "Armrests": "Detachable", "Footrests": "Swing-away" },
       features: ["Precision bearing wheels", "Breathable nylon upholstery", "Double crossbar stability", "Quick-response brakes"]
     },
     {
       id: 2, name: "Forza Freedom 4000 (Fixed)", brand: "Forza", category: "manual",
       status: "instock", stock: 8, image: "assets/Forza Freedom 4000 (Fixed Backrest).jpeg",
-      badge: "Durable Choice", price: 0, mrp: 0,
+      badge: "Durable Choice", badge_ta: "நீடித்த உழைப்பு", badge_hi: "टिकाऊ विकल्प", price: 0, mrp: 0,
       desc: "The Freedom 4000 features a fixed backrest for maximum stability and long-term durability. It is the workhorse of our manual range, preferred for clinical and hospital environments.",
+      desc_ta: "அதிகபட்ச நிலைப்புத்தன்மை மற்றும் நீண்ட கால ஆயுளுக்காக நிலையான பின்பக்கத்தை கொண்டுள்ளது. மருத்துவமனை சூழல்களுக்கு மிகவும் ஏற்றது.",
+      desc_hi: "फ्रीडम 4000 में अधिकतम स्थिरता और दीर्घकालिक स्थायित्व के लिए एक निश्चित बैकरेस्ट है। यह अस्पताल के वातावरण के लिए पसंदीदा है।",
       specs: { "Backrest": "Fixed Support", "Frame": "Reinforced Steel", "Seat Width": "18-20 inches", "Brakes": "Dual Rear Lock", "Rear Wheels": "Mag Wheels", "Weight": "18.5 kg" },
       features: ["Fixed backrest stability", "Heavy-duty frame", "Puncture-proof MAG wheels", "Anatomical armrests"]
     },
     {
       id: 3, name: "Forza Freedom 5000", brand: "Forza", category: "manual",
       status: "instock", stock: 12, image: "assets/Forza Freedom 5000 STD.jpeg",
-      badge: "Premium Manual", price: 0, mrp: 0,
+      badge: "Premium Manual", badge_ta: "பிரீமியம் மேனுவல்", badge_hi: "प्रीमियम मैनुअल", price: 0, mrp: 0,
       desc: "A premium manual wheelchair that combines sleek aesthetics with clinical functionality. Features a lightweight chassis and ergonomic seating for active independent users.",
+      desc_ta: "நேர்த்தியான தோற்றம் மற்றும் மருத்துவ செயல்பாடுகளைக் கொண்ட ஒரு பிரீமியம் கைமுறை சக்கர நாற்காலி. சுறுசுறுப்பான பயனர்களுக்கு ஏற்றது.",
+      desc_hi: "एक प्रीमियम मैनुअल व्हीलचेयर जो नैदानिक कार्यक्षमता के साथ आकर्षक सौंदर्यशास्त्र को जोड़ती है। सक्रिय उपयोगकर्ताओं के लिए एर्गोनोमिक।",
       specs: { "Brand": "Forza Freedom", "Chassis": "T6 Aluminium", "Casters": "6-inch Solid", "Rear Wheels": "Pneumatic/Solid options", "Weight": "14.2 kg", "Finish": "Matte Black" },
       features: ["Ultra-light chassis", "Ergonomic propulsion rims", "Modern matte finish", "Compact folding"]
     },
     {
       id: 4, name: "Forza Freedom 6000 (Recliner)", brand: "Forza", category: "manual",
       status: "instock", stock: 5, image: "assets/Forza Freedom 6000 (Recliner).jpeg",
-      badge: "Posture Support", price: 0, mrp: 0,
+      badge: "Posture Support", badge_ta: "நிலை ஆதரவு", badge_hi: "आसन सहायता", price: 0, mrp: 0,
       desc: "The Freedom 6000 Recliner is designed for users who require frequent changes in posture. High back support and smooth reclining mechanism provide relief and prevent pressure sores.",
+      desc_ta: "அடிக்கடி உடல் நிலையை மாற்ற வேண்டிய பயனர்களுக்காக வடிவமைக்கப்பட்டுள்ளது. மென்மையான சாய்வு பொறிமுறை அழுத்தப் புண்களைத் தடுக்க உதவுகிறது.",
+      desc_hi: "उन उपयोगकर्ताओं के लिए डिज़ाइन किया गया है जिन्हें बार-बार मुद्रा बदलने की आवश्यकता होती है। चिकनी रिक्लाइनिंग तंत्र राहत प्रदान करता है।",
       specs: { "Recline Range": "Up to 160°", "Head Support": "Integrated Contour", "Leg Support": "Elevating Footrests", "Frame": "Steel Reinforced", "Brakes": "Attendant & Hand-rim", "Cushion": "High Density" },
       features: ["Full recline mechanism", "Elevating leg support", "Contoured headrest", "High-stress durability"]
     },
     {
       id: 5, name: "Forza Freedom CP (Cerebral Palsy)", brand: "Forza", category: "manual",
       status: "instock", stock: 4, image: "assets/Forza Freedom CP.jpeg",
-      badge: "Paediatric Spec", price: 0, mrp: 0,
+      badge: "Paediatric Spec", badge_ta: "குழந்தைகள் சிறப்பு", badge_hi: "बाल विशिष्ट", price: 0, mrp: 0,
       desc: "A specialized paediatric/adult wheelchair for Cerebral Palsy management. Features tilt-in-space, lateral trunk supports, and a 5-point harness for maximum postural stability.",
+      desc_ta: "செரிப்ரல் பால்சி மேலாண்மைக்கான ஒரு சிறப்பு சக்கர நாற்காலி. அதிகபட்ச நிலைப்புத்தன்மைக்காக 5-புள்ளி ஹார்னஸ் கொண்டுள்ளது.",
+      desc_hi: "सेरेब्रल पाल्सी प्रबंधन के लिए एक विशेष व्हीलचेयर। अधिकतम स्थिरता के लिए 5-पॉइंट हार्नेस की सुविधा है।",
       specs: { "Mechanism": "Tilt-in-Space / Recline", "Supports": "Thoracic Lateral + Headrest", "Safety": "5-Point Harness included", "Seat": "Anatomical Contoured", "Wheels": "Small Transit Casters", "Adjustability": "Growth-flexible" },
       features: ["Postural lateral supports", "Tilt-in-space mechanism", "Head & neck alignment", "Growth adjustability"]
     },
     {
       id: 6, name: "Forza Freedom Junior Recliner", brand: "Forza", category: "manual",
       status: "instock", stock: 6, image: "assets/Forza Freedom Junior Recliner.jpeg",
-      badge: "Paediatric Choice", price: 0, mrp: 0,
+      badge: "Paediatric Choice", badge_ta: "குழந்தைகள் தேர்வு", badge_hi: "बाल पसंद", price: 0, mrp: 0,
       desc: "A dedicated paediatric reclining wheelchair that provides clinical comfort for children. Lightweight but high-support, with vibrant scaling and adjustable leg rests.",
+      desc_ta: "குழந்தைகளுக்கு மருத்துவ வசதியை வழங்கும் ஒரு சிறப்பு சாய்வு சக்கர நாற்காலி. இலகுரக மற்றும் அதிக ஆதரவு கொண்டது.",
+      desc_hi: "एक समर्पित बाल चिकित्सा रिक्लाइनिंग व्हीलचेयर जो बच्चों के लिए क्लिनिकल आराम प्रदान करती है। हल्का लेकिन उच्च-समर्थन।",
       specs: { "User Profile": "Junior / Child", "Recline": "Adjustable Backrest", "Frame": "Aluminium/Steel Hybrid", "Weight": "14 kg", "Legrest": "Elevating & Angle-Adjustable", "Warranty": "2 Years" },
       features: ["Child-specific ergonomics", "Comfort padding", "Safe recline angles", "Vibrant clinical finish"]
     },
     {
       id: 7, name: "Invacare Action 2 NG STD", brand: "Invacare", category: "manual",
       status: "instock", stock: 15, image: "assets/Invacare Action 2 NG STD.jpeg",
-      badge: "Global Trusted", price: 0, mrp: 0,
+      badge: "Global Trusted", badge_ta: "உலகளவில் நம்பகமானது", badge_hi: "वैश्विक विश्वसनीय", price: 0, mrp: 0,
       desc: "The Invacare Action 2 is a globally trusted standard for manual mobility. Offering reliability, customizability, and ease of transport for active users.",
+      desc_ta: "இன்வாகேர் ஆக்ஷன் 2 என்பது கைமுறை இயக்கத்திற்கான உலகளவில் நம்பகமான தரமாகும். இது சுறுசுறுப்பான பயனர்களுக்கு நம்பகத்தன்மை மற்றும் எளிதான போக்குவரத்தை வழங்குகிறது.",
+      desc_hi: "इन्वाकेयर एक्शन 2 मैनुअल मोबिलिटी के लिए विश्व स्तर पर विश्वसनीय मानक है। सक्रिय उपयोगकर्ताओं के लिए विश्वसनीयता और परिवहन की आसानी प्रदान करता है।",
       specs: { "Brand": "Invacare", "Series": "Action NG", "Frame": "Foldable Aluminium", "Rear Wheels": "Quick-release Spoke", "Custom": "Shadow Seat Adaptation", "Weight": "15 kg" },
       features: ["Quick-release rear wheels", "Dual-crossbar folding", "Shadow-ready seating", "Reliable durability"]
     },
     {
       id: 8, name: "Invacare Rea Clematis Pro", brand: "Invacare", category: "manual",
       status: "instock", stock: 3, image: "assets/Invacare Rea Clematis Pro.jpeg",
-      badge: "Clinical Elite", price: 0, mrp: 0,
+      badge: "Clinical Elite", badge_ta: "மருத்துவ எலைட்", badge_hi: "क्लिनिकल एलीट", price: 0, mrp: 0,
       desc: "A premium clinical tilt-in-space wheelchair designed for complex care. The Rea Clematis Pro provides exceptional pressure redistribution and long-term postural support.",
+      desc_ta: "சிக்கலான பராமரிப்புக்காக வடிவமைக்கப்பட்ட ஒரு பிரீமியம் மருத்துவ சாய்வு சக்கர நாற்காலி. இது விதிவிலக்கான அழுத்த மறுபகிர்வு மற்றும் நீண்ட கால நிலை ஆதரவை வழங்குகிறது.",
+      desc_hi: "जटिल देखभाल के लिए डिज़ाइन किया गया एक प्रीमियम क्लिनिकल टिल्ट-इन-स्पेस व्हीलचेयर। असाधारण दबाव पुनर्वितरण और दीर्घकालिक आसन सहायता प्रदान करता है।",
       specs: { "Brand": "Invacare", "Class": "Tilt-in-Space", "Tilt Range": "-1° to 25°", "Backrest Recline": "30° Stepless", "Seating": "Flo-shape Cushion", "Control": "Attendant Operated" },
       features: ["Clinical pressure relief", "Stepless recline control", "Flo-shape postural seating", "Stable wheelbase"]
     },
     {
       id: 9, name: "Stair Climber (Electric)", brand: "Shadow", category: "electric",
       status: "instock", stock: 2, image: "assets/Stair Climber.jpeg",
-      badge: "Innovation", price: 0, mrp: 0,
+      badge: "Innovation", badge_ta: "கண்டுபிடிப்பு", badge_hi: "नवाचार", price: 0, mrp: 0,
       desc: "Revolutionary mobility solution for multi-storey buildings. This electric stair climber features a caterpillar track system to safely transport users up and down stairs.",
+      desc_ta: "பல மாடி கட்டிடங்களுக்கான புரட்சிகர இயக்கத் தீர்வு. இந்த மின்சார படிக்கட்டு ஏறுபவர் பயனர்களை பாதுகாப்பாக படிக்கட்டுகளில் ஏற்றிச் செல்ல உதவுகிறது.",
+      desc_hi: "बहुमंजिला इमारतों के लिए क्रांतिकारी गतिशीलता समाधान। यह इलेक्ट्रिक स्टेयर क्लाइंबर उपयोगकर्ताओं को सुरक्षित रूप से सीढ़ियों से ऊपर और नीचे ले जाने में मदद करता है।",
       specs: { "Type": "Tracked Stair Climber", "Motor": "High-torque Electric", "Track": "Anti-slip Rubber", "Battery": "Lithium Rechargeable", "Capacity": "120 kg", "Operation": "Single Attendant" },
       features: ["Safe caterpillar tracks", "Foldable into car boot", "Adjustable guide handle", "Safety X-belt included"]
     },
     {
       id: 10, name: "Forza Freedom Urja Pro", brand: "Forza", category: "electric",
       status: "instock", stock: 5, image: "assets/Forza Freedom Urja Pro.jpeg",
-      badge: "Power Choice", price: 0, mrp: 0,
+      badge: "Power Choice", badge_ta: "சக்திவாய்ந்த தேர்வு", badge_hi: "पावर चॉइस", price: 0, mrp: 0,
       desc: "The Urja Pro is a high-performance electric wheelchair with a sophisticated joystick control system and long-range power. Built for rugged urban mobility.",
+      desc_ta: "உர்ஜா புரோ என்பது ஒரு உயர்தர மின்சார சக்கர நாற்காலி. இது நீண்ட தூர மின்சாரம் மற்றும் அதிநவீன ஜாய்ஸ்டிக் கட்டுப்பாட்டு அமைப்பைக் கொண்டுள்ளது.",
+      desc_hi: "उर्जा प्रो एक उच्च प्रदर्शन वाला इलेक्ट्रिक व्हीलचेयर है। इसमें परिष्कृत जॉयस्टिक नियंत्रण प्रणाली और लंबी दूरी की शक्ति है।",
       specs: { "Drive": "Rear-wheel Electric", "Controller": "Interactive Joystick", "Speed": "Up to 8 km/h", "Range": "15-20 km", "Climbing Angle": "Up to 12°", "Weight": "45 kg" },
       features: ["Interactive joystick control", "Dual powerful motors", "Rugged shock absorbers", "Comfort captain's seat"]
     },
     {
       id: 11, name: "Forza Freedom Urja Lite", brand: "Forza", category: "electric",
       status: "instock", stock: 7, image: "assets/Forza Freedom Urja Lite.jpeg",
-      badge: "Lightweight Electric", price: 0, mrp: 0,
+      badge: "Lightweight Electric", badge_ta: "இலகுரக மின்சாரம்", badge_hi: "लाइटवेट इलेक्ट्रिक", price: 0, mrp: 0,
       desc: "A lightweight, foldable electric wheelchair that bridges the gap between manual portability and power mobility. Perfect for travel and shopping malls.",
+      desc_ta: "இலகுரக, மடிக்கக்கூடிய மின்சார சக்கர நாற்காலி. இது பயணம் மற்றும் ஷாப்பிங் மால்களுக்கு செல்ல மிகவும் ஏற்றது.",
+      desc_hi: "एक हल्का, फोल्ड करने योग्य इलेक्ट्रिक व्हीलचेयर। यह यात्रा और शॉपिंग मॉल के लिए बिल्कुल सही है।",
       specs: { "Type": "Power Mobility", "Weight": "24 kg (with battery)", "Folding": "Single-button fold", "Battery": "Lithium-Ion", "Motors": "Brushless DC", "Casters": "Solid 8-inch" },
       features: ["Featherweight construction", "Brushless motor efficiency", "Ultra-compact folding", "Travel-safe battery"]
     }
@@ -159,6 +181,201 @@ const DB = {
   ]
 };
 
+// = i18n Dictionary =
+const i18n = {
+  en: {
+    address: "36, Professor Sanjeevi St, Mylapore, Chennai – 600004",
+    home: "Home", products: "Products", about: "About Us", contact: "Contact",
+    shop_elec: "Electric Wheelchairs", shop_man: "Manual Wheelchairs",
+    footer_p: "Empowering mobility and enriching lives across India, one customer at a time.",
+    copyright: "2026 Shadow Wheelchairs & Seating. All Rights Reserved.",
+    about_title: "EMPOWERING <span>INDEPENDENCE</span><br>SINCE 2015",
+    about_p: "Shadow Wheelchairs & Seating was founded by Johnson, a passionate mobility specialist. Our mission is to provide the exact mobility solution your body and lifestyle demands.",
+    contact_h2: "CONTACT US", contact_p: "Reach out with any questions or to book a free consultation",
+    why_title: "WHY CHOOSE <span style='color:var(--orange)'>SHADOW</span>",
+    why_sub: "Six reasons thousands of customers trust us",
+    testimonials_title: "CUSTOMER STORIES",
+    testimonials_sub: "Real experiences from our community",
+    top_selling: "TOP SELLING PRODUCTS",
+    top_selling_sub: "Our most trusted mobility solutions",
+    view_all: "View All Products →",
+    partner_title: "TRUSTED <span style='color:var(--orange)'>PARTNER BRANDS</span>",
+    all_products: "All Products",
+    custom_seating: "Custom Seating",
+    contact_quote: "Contact for Quote",
+    express_interest: "Express Interest",
+    back_to_shop: "Back to Shop",
+    sort: "Sort",
+    related: "RELATED PRODUCTS",
+    cta_h2: "NOT SURE WHICH CHAIR IS RIGHT?",
+    cta_p: "Talk to our mobility specialist — free, no-obligation consultation.",
+    call_now: "Call Us Now",
+    send_enquiry: "Send Enquiry",
+    cart_title: "Your Cart",
+    cart_empty: "Your cart is empty",
+    cart_empty_sub: "Add products to get started.",
+    browse_btn: "Browse Products",
+    footer_hours: "Mon–Sat: 10:30 AM – 5:00 PM",
+    made_with: "Made with ❤ for patient care in India",
+    company: "Company",
+    items_found: "products found",
+    partner_sub: "We source from the world's leading wheelchair manufacturers and customise every chair for your unique needs",
+    partner_footer: "Shadow Wheelchairs is an authorised dealer and customisation partner for all the brands above. Every chair is sourced, assessed, and adapted specifically for your requirements.",
+    cat_h2: "PRODUCT CATEGORIES",
+    cat_p: "Find the right mobility solution for your needs",
+    product_label: "product",
+    stat_cust: "Customers Served",
+    stat_exp: "Years Experience",
+    stat_models: "Wheelchair Models",
+    stat_support: "Support Available",
+    bespoke_title: "Shadow Bespoke Lab",
+    bespoke_sub: "Design your signature look and utility kit",
+    frame_color: "Frame Color",
+    accessories: "Premium Accessories",
+    add_bespoke: "Customize My Chair",
+    config_summary: "Configuration Summary",
+    matte_black: "Matte Stealth Black",
+    racing_red: "Racing Crimson Red",
+    gold: "Champagne Gold",
+    navy: "Deep Midnight Blue",
+    tech_mount: "Tech Mount (Phone/Tablet)",
+    barista_kit: "Barista Kit (Cup Holder)",
+    signature_bag: "Shadow Signature Bag",
+    led_kit: "LED Underglow Kit",
+    weather_shield: "Weather Shield (Umbrella)",
+    power_hub: "Power Hub (Extra USB)",
+    customize: "Customize"
+  },
+  ta: {
+    address: "36, புரொபசர் சஞ்சீவி தெரு, மயிலாப்பூர், சென்னை – 600004",
+    home: "முகப்பு", products: "தயாரிப்புகள்", about: "எங்களைப் பற்றி", contact: "தொடர்பு",
+    cart: "கூடை", wishlist: "விருப்பப்பட்டியல்", account: "கணக்கு",
+    shop_elec: "மின்சார சக்கர நாற்காலிகள்", shop_man: "கைமுறை சக்கர நாற்காலிகள்",
+    footer_p: "இந்தியா முழுவதும் இயக்கத்தை மேம்படுத்துதல் மற்றும் வாழ்க்கையை வளப்படுத்துதல்.",
+    copyright: "2026 ஷேடோ வீல்சேர்ஸ். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
+    about_title: "2015 முதல் <span>சுதந்திரத்தை</span> மேம்படுத்துதல்",
+    about_p: "ஷேடோ வீல்சேர்ஸ் ஜான்சன் என்பவரால் தொடங்கப்பட்டது. உங்கள் உடல் மற்றும் வாழ்க்கை முறைக்குத் தேவையான சரியான தீர்வை வழங்குவதே எங்கள் நோக்கம்.",
+    contact_h2: "எங்களைத் தொடர்பு கொள்ளவும்", contact_p: "ஏதேனும் கேள்விகள் இருந்தால் அல்லது இலவச ஆலோசனையைப் பெற எங்களைத் தொடர்பு கொள்ளவும்",
+    why_title: "ஏன் <span style='color:var(--orange)'>ஷேடோவை</span> தேர்வு செய்ய வேண்டும்?",
+    why_sub: "ஆயிரக்கணக்கான வாடிக்கையாளர்கள் எங்களை நம்புவதற்கான ஆறு காரணங்கள்",
+    testimonials_title: "வாடிக்கையாளர் கதைகள்",
+    testimonials_sub: "எங்கள் சமூகத்திலிருந்து உண்மையான அனுபவங்கள்",
+    top_selling: "அதிகம் விற்பனையாகும் தயாரிப்புகள்",
+    top_selling_sub: "எங்கள் மிகவும் நம்பகமான தீர்வுகள்",
+    view_all: "அனைத்து தயாரிப்புகளையும் பார்க்க →",
+    partner_title: "நம்பகமான <span style='color:var(--orange)'>கூட்டாளர் பிராண்டுகள்</span>",
+    all_products: "அனைத்து தயாரிப்புகள்",
+    custom_seating: "தனிப்பயன் இருக்கை",
+    contact_quote: "விலைப்புள்ளிக்கு தொடர்பு கொள்ளவும்",
+    express_interest: "விருப்பம் காட்டு",
+    back_to_shop: "மீண்டும் கடைக்கு",
+    sort: "வரிசைப்படுத்து",
+    related: "தொடர்புடைய தயாரிப்புகள்",
+    cta_h2: "எந்த நாற்காலி சரியானது என்று தெரியவில்லையா?",
+    cta_p: "எங்கள் இயக்க நிபுணரிடம் பேசுங்கள் - இலவச ஆலோசனை.",
+    call_now: "இப்போதே அழைக்கவும்",
+    send_enquiry: "விசாரணை அனுப்பவும்",
+    cart_title: "உங்கள் கூடை",
+    cart_empty: "உங்கள் கூடை காலியாக உள்ளது",
+    cart_empty_sub: "தொடங்குவதற்கு தயாரிப்புகளைச் சேர்க்கவும்.",
+    browse_btn: "தயாரிப்புகளைப் பாருங்கள்",
+    footer_hours: "திங்கள்-சனி: காலை 10:30 - மாலை 5:00",
+    made_with: "இந்தியாவில் நோயாளிகளுக்காக ❤ உடன் உருவாக்கப்பட்டது",
+    company: "நிறுவனம்",
+    items_found: "தயாரிப்புகள் கண்டறியப்பட்டன",
+    partner_sub: "நாங்கள் உலகின் முன்னணி சக்கர நாற்காலி தயாரிப்பாளர்களிடமிருந்து பெற்று உங்கள் தனிப்பட்ட தேவைகளுக்காக ஒவ்வொரு நாற்காலியையும் தனிப்பயனாக்குகிறோம்",
+    partner_footer: "ஷேடோ வீல்சேர்ஸ் மேலே உள்ள அனைத்து பிராண்டுகளுக்கும் அங்கீகரிக்கப்பட்ட டீலர் மற்றும் தனிப்பயனாக்க கூட்டாளர். ஒவ்வொரு நாற்காலியும் உங்கள் தேவைகளுக்காகவே உருவாக்கப்படுகிறது.",
+    cat_h2: "தயாரிப்பு வகைகள்",
+    cat_p: "உங்கள் தேவைகளுக்கான சரியான தீர்வை இங்கே கண்டறியவும்",
+    product_label: "தயாரிப்பு",
+    stat_cust: "வாடிக்கையாளர்கள்",
+    stat_exp: "ஆண்டு அனுபவம்",
+    stat_models: "சக்கர நாற்காலி மாதிரிகள்",
+    stat_support: "ஆதரவு கிடைக்கிறது",
+    bespoke_title: "ஷேடோ பெஸ்போக் லேப்",
+    bespoke_sub: "உங்கள் கையொப்ப தோற்றம் மற்றும் பயன்பாட்டு கருவியை வடிவமைக்கவும்",
+    frame_color: "பிரேம் நிறம்",
+    accessories: "பிரீமியம் பாகங்கள்",
+    add_bespoke: "எனது நாற்காலியைத் தனிப்பயனாக்கு",
+    config_summary: "வடிவமைப்பு சுருக்கம்",
+    matte_black: "மேட் ஸ்டீல்த் பிளாக்",
+    racing_red: "ரேசிங் கிரிம்சன் ரெட்",
+    gold: "ஷாம்பெயின் கோல்ட்",
+    navy: "டீப் மிட்நைட் ப்ளூ",
+    tech_mount: "டெக் மவுண்ட் (போன்/டேப்லெட்)",
+    barista_kit: "பாரிஸ்டா கிட் (கப் ஹோல்டர்)",
+    signature_bag: "ஷேடோ சிக்னேச்சர் பேக்",
+    led_kit: "எல்இடி அண்டர்குளோ கிட்",
+    weather_shield: "வெதர் ஷீல்ட் (குடை)",
+    power_hub: "பவர் ஹப் (கூடுதல் யூஎஸ்பி)",
+    customize: "தனிப்பயனாக்கு"
+  },
+  hi: {
+    address: "36, प्रोफेसर संजीव स्ट्रीट, मायलापुर, चेन्नई - 600004",
+    home: "होम", products: "उत्पाद", about: "हमारे बारे में", contact: "संपर्क",
+    cart: "टोकरी", wishlist: "इच्छा सूची", account: "खाता",
+    shop_elec: "इलेक्ट्रिक व्हीलचेयर", shop_man: "मैनुअल व्हीलचेयर",
+    footer_p: "पूरे भारत में गतिशीलता को सशक्त बनाना और जीवन को समृद्ध बनाना।",
+    copyright: "2026 शैडो व्हीलचेयर। सर्वाधिकार सुरक्षित।",
+    about_title: "2015 से <span>स्वतंत्रता</span> को सशक्त बनाना",
+    about_p: "शैडो व्हीलचेयर की स्थापना जॉनसन द्वारा की गई थी। हमारा मिशन आपके शरीर और जीवनशैली की जरूरतों के अनुसार सटीक समाधान प्रदान करना है।",
+    contact_h2: "संपर्क करें", contact_p: "किसी भी प्रश्न के लिए या मुफ्त परामर्श बुक करने के लिए हमसे संपर्क करें",
+    why_title: "<span style='color:var(--orange)'>शैडो</span> को क्यों चुनें?",
+    why_sub: "हजारों ग्राहक हम पर भरोसा क्यों करते हैं, इसके छह कारण",
+    testimonials_title: "ग्राहक कहानियाँ",
+    testimonials_sub: "हमारे समुदाय से वास्तविक अनुभव",
+    top_selling: "सबसे ज्यादा बिकने वाले उत्पाद",
+    top_selling_sub: "हमारे सबसे भरोसेमंद समाधान",
+    view_all: "सभी उत्पाद देखें →",
+    partner_title: "विश्वसनीय <span style='color:var(--orange)'>पार्टनर ब्रांड</span>",
+    all_products: "सभी उत्पाद",
+    custom_seating: "कस्टम सीटिंग",
+    contact_quote: "कोटेशन के लिए संपर्क करें",
+    express_interest: "दिखाए रुचि",
+    back_to_shop: "दुकान पर वापस",
+    sort: "क्रमबद्ध",
+    related: "संबंधित उत्पाद",
+    cta_h2: "निश्चित नहीं हैं कि कौन सी कुर्सी सही है?",
+    cta_p: "हमारे विशेषज्ञ से बात करें - निःशुल्क परामर्श।",
+    call_now: "अभी कॉल करें",
+    send_enquiry: "पूछताछ भेजें",
+    cart_title: "आपकी टोकरी",
+    cart_empty: "आपकी टोकरी खाली है",
+    cart_empty_sub: "शुरू करने के लिए उत्पाद जोड़ें।",
+    browse_btn: "उत्पाद देखें",
+    footer_hours: "सोम-शनि: सुबह 10:30 - शाम 5:00 बजे",
+    made_with: "भारत में देखभाल के साथ ❤ द्वारा निर्मित",
+    company: "कंपनी",
+    items_found: "उत्पाद मिले",
+    partner_sub: "हम दुनिया के अग्रणी निर्माताओं से प्राप्त करते हैं और आपकी विशिष्ट आवश्यकताओं के लिए अनुकूलित करते हैं",
+    partner_footer: "शैडो व्हीलचेयर उपरोक्त सभी ब्रांडों का अधिकृत डीलर और अनुकूलन भागीदार है। हर कुर्सी आपकी आवश्यकताओं के लिए खास है।",
+    cat_h2: "उत्पाद श्रेणियां",
+    cat_p: "अपनी आवश्यकताओं के लिए सही समाधान खोजें",
+    product_label: "उत्पाद",
+    stat_cust: "संतुष्ट ग्राहक",
+    stat_exp: "वर्षों का अनुभव",
+    stat_models: "व्हीलचेयर मॉडल",
+    stat_support: "सपोर्ट उपलब्ध",
+    bespoke_title: "शैडो बेस्पोक लैब",
+    bespoke_sub: "अपना सिग्नेचर लुक और यूटिलिटी किट डिजाइन करें",
+    frame_color: "फ्रेम का रंग",
+    accessories: "प्रीमियम एक्सेसरीज",
+    add_bespoke: "अपनी कुर्सी कस्टमाइज़ करें",
+    config_summary: "कॉन्फ़िगरेशन सारांश",
+    matte_black: "मैट स्टील्थ ब्लैक",
+    racing_red: "रेसिंग क्रिमसन रेड",
+    gold: "शैम्पेन गोल्ड",
+    navy: "डीप मिडनाइट ब्लू",
+    tech_mount: "टेक माउंट (फोन/टैबलेट)",
+    barista_kit: "बरिस्ता किट (कप होल्डर)",
+    signature_bag: "शैडो सिग्नेचर बैग",
+    led_kit: "एलईडी अंडरग्लो किट",
+    weather_shield: "वेदर शील्ड (छाता)",
+    power_hub: "पावर हब (अतिरिक्त यूएसबी)",
+    customize: "कस्टमाइज़ करें"
+  }
+};
+
 // ===================== STATE =====================
 const State = {
   // --- Core Data ---
@@ -170,6 +387,8 @@ const State = {
   registeredUsers: (localStorage.getItem('sw_registered_users') && JSON.parse(localStorage.getItem('sw_registered_users')).length) ? JSON.parse(localStorage.getItem('sw_registered_users')) : DB.registeredUsers,
 
   // --- UI State ---
+  lang: localStorage.getItem('sw_lang') || 'en',
+  theme: localStorage.getItem('sw_theme') || 'light',
   shopFilter: 'all',
   heroSlide: 0,
   heroTimer: null,
@@ -184,6 +403,45 @@ const State = {
     localStorage.setItem('sw_products_v14', JSON.stringify(this.products));
     localStorage.setItem('sw_orders', JSON.stringify(this.orders));
     localStorage.setItem('sw_registered_users', JSON.stringify(this.registeredUsers || []));
+    localStorage.setItem('sw_lang', this.lang);
+    localStorage.setItem('sw_theme', this.theme);
+  },
+
+  t(key) { return i18n[this.lang][key] || key; },
+  setLang(l) { this.lang = l; this.save(); window.location.reload(); },
+  toggleTheme() {
+    this.theme = this.theme === 'light' ? 'dark' : 'light';
+    this.save();
+    this.applyTheme();
+  },
+  applyTheme() {
+    document.documentElement.setAttribute('data-theme', this.theme);
+    const btn = document.getElementById('theme-toggle-btn');
+    if (btn) btn.innerHTML = this.theme === 'light' ? '🌙' : '☀️';
+  },
+
+  // Update strings that are hardcoded in index.html for SEO
+  updateStaticStrings() {
+    const sel = document.getElementById('lang-select');
+    if (sel) sel.value = this.lang;
+
+    document.title = (this.lang === 'ta' ? 'ஷேடோ வீல்சேர்ஸ்' : (this.lang === 'hi' ? 'शैडो व्हीलचेयर' : 'Shadow Wheelchairs')) + ' | Chennai';
+
+    const elements = {
+      'top-address': 'address',
+      'nav-home': 'home',
+      'nav-products': 'products',
+      'nav-elec': 'shop_elec',
+      'nav-man': 'shop_man',
+      'nav-bespoke': 'bespoke_title',
+      'nav-about': 'about',
+      'nav-contact': 'contact'
+    };
+
+    for (let id in elements) {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = this.t(elements[id]) + (id === 'nav-products' ? ' ▾' : '');
+    }
   },
 
   getProduct(id) { return this.products.find(p => p.id === parseInt(id)); },
@@ -371,6 +629,11 @@ const Wishlist = {
       btn.classList.toggle('loved', State.wishlist.includes(id));
       btn.textContent = State.wishlist.includes(id) ? '❤' : '♡';
     });
+    // Update Detail Page button if exists
+    const detailBtn = document.getElementById('detail-wish-btn');
+    if (detailBtn) {
+      detailBtn.innerHTML = State.wishlist.includes(id) ? '❤ ' + State.t('wishlist') : '♡ ' + State.t('wishlist');
+    }
   },
   has(id) { return State.wishlist.includes(id); }
 };
@@ -458,10 +721,13 @@ const UI = {
   renderCartDrawer() {
     const body = document.getElementById('cart-body');
     const foot = document.getElementById('cart-foot');
+    const head = document.querySelector('.cart-drawer .drawer-head h3');
     if (!body || !foot) return;
 
+    if (head) head.innerHTML = State.t('cart_title');
+
     if (!State.cart.length) {
-      body.innerHTML = `<div class="empty-cart"><div class="ec-icon">🛒</div><h4>Your cart is empty</h4><p>Add products to get started.</p><br><button class="btn btn-primary btn-sm" onclick="UI.closeCart(); router.go('shop')">Browse Products</button></div>`;
+      body.innerHTML = `<div class="empty-cart"><div class="ec-icon">🛒</div><h4>${State.t('cart_empty')}</h4><p>${State.t('cart_empty_sub')}</p><br><button class="btn btn-primary btn-sm" onclick="UI.closeCart(); router.go('shop')">${State.t('browse_btn')}</button></div>`;
       foot.innerHTML = '';
       return;
     }
@@ -506,27 +772,50 @@ const UI = {
 // ===================== HERO SLIDER =====================
 const Hero = {
   slides: [
-    { badge: "Premium Mobility Choice", title: "EMPOWERING <span class='highlight'>MOBILITY</span>", sub: "Experience next-level independence with our sophisticated electric wheelchairs.", img: "assets/hero_electric.png", btnLabel: "Shop Electric", category: "electric" },
-    { badge: "Manual Excellence", title: "BUILT FOR <span class='highlight'>PRECISION</span>", sub: "Ultra-lightweight frames and ergonomic design for your active lifestyle.", img: "assets/hero_manual.png", btnLabel: "Shop Manual", category: "manual" },
-    { badge: "Shadow Innovation", title: "BEYOND <span class='highlight'>BOUNDARIES</span>", sub: "Revolutionary devices designed to overcome any obstacle, including stairs.", img: "assets/hero_innovation.png", btnLabel: "Explore Technology", category: "electric" }
+    {
+      badge: { en: "Premium Mobility Choice", ta: "பிரீமியம் மொபிலிட்டி விருப்பம்", hi: "प्रीमियम मोबिलिटी चॉइस" },
+      title: { en: "EMPOWERING <span class='highlight'>MOBILITY</span>", ta: "இயக்கத்தை <span class='highlight'>மேம்படுத்துதல்</span>", hi: "गतिशीलता <span class='highlight'>सशक्तिकरण</span>" },
+      sub: { en: "Experience next-level independence with our sophisticated electric wheelchairs.", ta: "எங்கள் மேம்பட்ட மின்சார சக்கர நாற்காலிகள் மூலம் அடுத்த கட்ட சுதந்திரத்தை அனுபவியுங்கள்.", hi: "हमारे परिष्कृत इलेक्ट्रिक व्हीलचेयर के साथ अगले स्तर की स्वतंत्रता का अनुभव करें।" },
+      img: "assets/hero_electric.png",
+      btnLabel: { en: "Shop Electric", ta: "எலெக்ட்ரிக் வாங்க", hi: "इलेक्ट्रिक खरीदें" },
+      category: "electric"
+    },
+    {
+      badge: { en: "Manual Excellence", ta: "சிறந்த கைமுறை நாற்காலிகள்", hi: "मैनुअल उत्कृष्टता" },
+      title: { en: "BUILT FOR <span class='highlight'>PRECISION</span>", ta: "துல்லியத்திற்காக <span class='highlight'>உருவாக்கப்பட்டது</span>", hi: "सटीकता के लिए <span class='highlight'>निर्मित</span>" },
+      sub: { en: "Ultra-lightweight frames and ergonomic design for your active lifestyle.", ta: "உங்கள் சுறுசுறுப்பான வாழ்க்கை முறைக்கு ஏற்ற எடை குறைந்த மற்றும் பணிச்சூழலியல் வடிவமைப்பு.", hi: "आपकी सक्रिय जीवनशैली के लिए अल्ट्रा-लाइटवेट फ्रेम और एर्गोनोमिक डिज़ाइन।" },
+      img: "assets/hero_manual.png",
+      btnLabel: { en: "Shop Manual", ta: "மேனுவல் வாங்க", hi: "मैनुअल खरीदें" },
+      category: "manual"
+    },
+    {
+      badge: { en: "Shadow Innovation", ta: "ஷேடோ கண்டுபிடிப்பு", hi: "शैडो इनोवेशन" },
+      title: { en: "BEYOND <span class='highlight'>BOUNDARIES</span>", ta: "எல்லைகளுக்கு <span class='highlight'>அப்பால்</span>", hi: "सीमाओं के <span class='highlight'>पार</span>" },
+      sub: { en: "Revolutionary devices designed to overcome any obstacle, including stairs.", ta: "படிக்கட்டுகள் உட்பட எந்தவொரு தடையையும் கடக்க வடிவமைக்கப்பட்ட புரட்சிகர சாதனங்கள்.", hi: "सीढ़ियों सहित किसी भी बाधा को दूर करने के लिए डिज़ाइन किए गए क्रांतिकारी उपकरण।" },
+      img: "assets/hero_innovation.png",
+      btnLabel: { en: "Explore", ta: "ஆராய்ந்து பாருங்கள்", hi: "एक्सप्लोर करें" },
+      category: "electric"
+    }
   ],
 
   render() {
+    const l = State.lang;
+    const t = (obj) => obj[l] || obj['en'] || '';
     return `
       <div class="hero">
         <div class="hero-slides" id="hero-slides">
           ${this.slides.map((s, i) => `
             <div class="hero-slide ${i === 0 ? 'active' : ''}" id="slide-${i}">
               <div class="hero-content">
-                <div class="hero-badge">${s.badge}</div>
-                <h1>${s.title}</h1>
-                <p>${s.sub}</p>
+                <div class="hero-badge">${t(s.badge)}</div>
+                <h1>${t(s.title)}</h1>
+                <p>${t(s.sub)}</p>
                 <div class="hero-actions">
-                  <button class="btn btn-primary" onclick="router.goShop('${s.category}')">${s.btnLabel}</button>
-                  <button class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.3)" onclick="router.go('contact')">Get Free Advice</button>
+                  <button class="btn btn-primary" onclick="router.goShop('${s.category}')">${t(s.btnLabel)}</button>
+                  <button class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.3)" onclick="router.go('contact')">${l === 'ta' ? 'இலவச ஆலோசனை' : (l === 'hi' ? 'मुफ्त सलाह' : 'Get Free Advice')}</button>
                 </div>
               </div>
-              <div class="hero-image"><img src="${s.img}" alt="${s.title.replace(/<[^>]+>/g, '')}"></div>
+              <div class="hero-image"><img src="${s.img}" alt="Hero Image"></div>
             </div>
           `).join('')}
         </div>
@@ -556,8 +845,15 @@ const Hero = {
 
 // ===================== PRODUCT CARD =====================
 function productCard(p) {
+  const l = State.lang;
+  const tn = (obj, key) => obj[key + '_' + l] || obj[key];
+
   const statusMap = { instock: 'badge-instock', lowstock: 'badge-lowstock', outofstock: 'badge-outofstock', rental: 'badge-rental', custom: 'badge-custom' };
-  const statusLabel = { instock: 'In Stock', lowstock: 'Low Stock', outofstock: 'Out of Stock' };
+  const statusLabel = {
+    en: { instock: 'In Stock', lowstock: 'Low Stock', outofstock: 'Out of Stock' },
+    ta: { instock: 'இருப்பில் உள்ளது', lowstock: 'குறைந்த இருப்பு', outofstock: 'இருப்பில் இல்லை' },
+    hi: { instock: 'स्टॉक में', lowstock: 'कम स्टॉक', outofstock: 'स्टॉक में नहीं' }
+  };
   const badgeClass = p.isRental ? 'badge-rental' : (p.category === 'custom' ? 'badge-custom' : statusMap[p.status]);
   const isLoved = Wishlist.has(p.id);
   const canBuy = p.status !== 'outofstock';
@@ -566,19 +862,19 @@ function productCard(p) {
     <div class="product-card" id="pc-${p.id}">
       <div class="product-img-wrap" onclick="router.goProduct(${p.id})">
         <img src="${p.image}" alt="${utils.h(p.name)}" loading="lazy">
-        <span class="product-badge ${badgeClass}">${utils.h(p.badge) || (p.isRental ? 'For Rent' : statusLabel[p.status])}</span>
+        <span class="product-badge ${badgeClass}">${tn(p, 'badge') || (p.isRental ? 'For Rent' : statusLabel[l][p.status])}</span>
         <button class="wishlist-btn ${isLoved ? 'loved' : ''}" data-id="${p.id}" onclick="event.stopPropagation(); Wishlist.toggle(${p.id})">${isLoved ? '❤' : '♡'}</button>
       </div>
       <div class="product-info">
         <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px">
-          <div class="cat-label">${utils.h(p.category.charAt(0).toUpperCase() + p.category.slice(1))}</div>
+          <div class="cat-label">${l === 'ta' ? (p.category === 'manual' ? 'மேனுவல்' : 'எலெக்ட்ரிக்') : (l === 'hi' ? (p.category === 'manual' ? 'मैनुअल' : 'इलेक्ट्रिक') : p.category.charAt(0).toUpperCase() + p.category.slice(1))}</div>
           ${p.brand ? `<span style="font-size:.68rem;padding:2px 8px;background:rgba(245,160,0,.12);color:var(--orange-dark);border-radius:50px;font-weight:800;white-space:nowrap">${utils.h(p.brand)}</span>` : ''}
         </div>
-        <h3 onclick="router.goProduct(${p.id})">${utils.h(p.name)}</h3>
-        <p class="desc">${utils.h(p.desc).substring(0, 80)}...</p>
+        <h3 onclick="router.goProduct(${p.id})">${tn(p, 'name')}</h3>
+        <p class="desc">${tn(p, 'desc').substring(0, 80)}...</p>
         <div class="product-footer">
           <button class="btn btn-outline btn-sm btn-full" onclick="Pages.quickEnquiry(${p.id})" ${!canBuy ? 'disabled' : ''}>
-            ${canBuy ? 'Show Interest' : 'Unavailable'}
+            ${canBuy ? (l === 'ta' ? 'விருப்பம் காட்டு' : (l === 'hi' ? 'दिखाए रुचि' : 'Show Interest')) : (l === 'ta' ? 'கிடைக்கவில்லை' : (l === 'hi' ? 'अनुपलब्ध' : 'Unavailable'))}
           </button>
         </div>
       </div>
@@ -591,19 +887,20 @@ const Pages = {
 
   // ---- HOME ----
   home() {
+    const l = State.lang;
     const cats = [
-      { id: 'electric', icon: '⚡', label: 'Electric Wheelchairs', count: State.products.filter(p => p.category === 'electric').length },
-      { id: 'manual', icon: '♿', label: 'Manual Wheelchairs', count: State.products.filter(p => p.category === 'manual').length },
-      { id: 'custom', icon: '🎯', label: 'Custom Seating', count: State.products.filter(p => p.category === 'custom').length },
+      { id: 'electric', icon: '⚡', label: l === 'ta' ? 'மின்சார சக்கர நாற்காலிகள்' : (l === 'hi' ? 'इलेक्ट्रिक व्हीलचेयर' : 'Electric Wheelchairs'), count: State.products.filter(p => p.category === 'electric').length },
+      { id: 'manual', icon: '♿', label: l === 'ta' ? 'கைமுறை சக்கர நாற்காலிகள்' : (l === 'hi' ? 'मैनुअल व्हीलचेयर' : 'Manual Wheelchairs'), count: State.products.filter(p => p.category === 'manual').length },
+      { id: 'custom', icon: '🎯', label: l === 'ta' ? 'தனிப்பயன் இருக்கை' : (l === 'hi' ? 'कस्टम सीटिंग' : 'Custom Seating'), count: State.products.filter(p => p.category === 'custom').length },
     ];
 
     const whyUs = [
-      { icon: '📐', title: 'Personalised Assessment', text: 'Every customer is unique. Our therapists conduct a full assessment before recommending or building your chair.' },
-      { icon: '🏗', title: 'Custom Fabrication', text: 'We customise wheelchairs for every mobility difficulty – postural support, hospice needs, and more.' },
-      { icon: '🚚', title: 'Home Delivery & Setup', text: 'From Chennai to India-wide, we deliver, assemble, and fit your wheelchair at home.' },
-      { icon: '🔧', title: 'After-Sales Maintenance', text: 'Ongoing wheelchair maintenance and servicing so your chair performs at its best every day.' },
-      { icon: '🏥', title: 'Hospital & Hospice Care', text: 'Specialised reclining and comfort equipment designed for long-term care and recovery.' },
-      { icon: '❤️', title: 'Compassionate Care', text: 'We understand the emotional journey. Our team brings patience, empathy, and expertise to every interaction.' }
+      { icon: '📐', title: l === 'ta' ? 'தனிப்பயனாக்கப்பட்ட மதிப்பீடு' : (l === 'hi' ? 'व्यक्तिगत मूल्यांकन' : 'Personalised Assessment'), text: l === 'ta' ? 'ஒவ்வொரு வாடிக்கையாளரும் தனிப்பட்டவர்கள்.' : (l === 'hi' ? 'हर ग्राहक अद्वितीय है।' : 'Every customer is unique.') },
+      { icon: '🏗', title: l === 'ta' ? 'தனிப்பயன் தயாரிப்பு' : (l === 'hi' ? 'कस्टम निर्माण' : 'Custom Fabrication'), text: l === 'ta' ? 'நாங்கள் ஒவ்வொருவருக்கும் ஏற்ப சக்கர நாற்காலிகளைத் தயாரிக்கிறோம்.' : (l === 'hi' ? 'हम आपकी आवश्यकतानुसार व्हीलचेयर बनाते हैं।' : 'We customise wheelchairs for every difficulty.') },
+      { icon: '🚚', title: l === 'ta' ? 'வீட்டு விநியோகம்' : (l === 'hi' ? 'होम डिलीवरी' : 'Home Delivery & Setup'), text: l === 'ta' ? 'இந்தியா முழுவதும் வீட்டு விநியோகம் செய்கிறோம்.' : (l === 'hi' ? 'हम पूरे भारत में होम डिलीवरी करते हैं।' : 'We deliver India-wide at home.') },
+      { icon: '🔧', title: l === 'ta' ? 'விற்பனைக்குப் பிந்தைய பராமரிப்பு' : (l === 'hi' ? 'बिक्री के बाद सेवा' : 'After-Sales Maintenance'), text: l === 'ta' ? 'தொடர்ச்சியான பராமரிப்பு மற்றும் சேவை வழங்கப்படுகிறது.' : (l === 'hi' ? 'चल रहे रखरखाव और सर्विसिंग।' : 'Ongoing maintenance and servicing.') },
+      { icon: '🏥', title: l === 'ta' ? 'மருத்துவமனை பராமரிப்பு' : (l === 'hi' ? 'अस्पताल देखभाल' : 'Hospital & Hospice Care'), text: l === 'ta' ? 'நேரம் மற்றும் மீட்சிக்காக வடிவமைக்கப்பட்ட உபகரணங்கள்.' : (l === 'hi' ? 'दीर्घकालिक देखभाल के लिए उपकरण।' : 'Designed for long-term care.') },
+      { icon: '❤️', title: l === 'ta' ? 'அன்பான கவனிப்பு' : (l === 'hi' ? 'करुणा के साथ देखभाल' : 'Compassionate Care'), text: l === 'ta' ? 'நாங்கள் மென்மையான மற்றும் அன்பான சேவையை வழங்குகிறோம்.' : (l === 'hi' ? 'हम सहानुभूति और विशेषज्ञता लाते हैं।' : 'We bring empathy to every interaction.') }
     ];
 
     const topProducts = State.products.filter(p => p.status !== 'outofstock').slice(0, 4);
@@ -613,22 +910,22 @@ const Pages = {
 
       <div class="stats-bar">
         <div class="stats-inner">
-          <div class="stat-item"><strong>1000+</strong><span>Customers Served</span></div>
-          <div class="stat-item"><strong>10+</strong><span>Years Experience</span></div>
-          <div class="stat-item"><strong>8</strong><span>Wheelchair Models</span></div>
-          <div class="stat-item"><strong>24/7</strong><span>Support Available</span></div>
+          <div class="stat-item"><strong>1000+</strong><span>${State.t('stat_cust')}</span></div>
+          <div class="stat-item"><strong>10+</strong><span>${State.t('stat_exp')}</span></div>
+          <div class="stat-item"><strong>8</strong><span>${State.t('stat_models')}</span></div>
+          <div class="stat-item"><strong>24/7</strong><span>${State.t('stat_support')}</span></div>
         </div>
       </div>
 
       <section class="categories-section">
         <div class="container">
-          <div class="section-title"><h2>PRODUCT CATEGORIES</h2><span class="accent-line"></span><p>Find the right mobility solution for your needs</p></div>
+          <div class="section-title"><h2>${State.t('cat_h2')}</h2><span class="accent-line"></span><p>${State.t('cat_p')}</p></div>
           <div class="categories-grid">
             ${cats.map(c => `
               <div class="category-card" onclick="router.goShop('${c.id}')">
                 <span class="cat-icon">${c.icon}</span>
                 <h4>${c.label}</h4>
-                <span>${c.count} product${c.count !== 1 ? 's' : ''}</span>
+                <span>${c.count} ${State.t('product_label')}${c.count !== 1 ? (l === 'en' ? 's' : '') : ''}</span>
               </div>
             `).join('')}
           </div>
@@ -637,22 +934,22 @@ const Pages = {
 
       <section class="section">
         <div class="container">
-          <div class="section-title"><h2>TOP SELLING PRODUCTS</h2><span class="accent-line"></span><p>Our most trusted mobility solutions</p></div>
+          <div class="section-title"><h2>${State.t('top_selling')}</h2><span class="accent-line"></span><p>${State.t('top_selling_sub')}</p></div>
           <div class="product-grid">${topProducts.map(p => productCard(p)).join('')}</div>
-          <div style="text-align:center;margin-top:3rem"><button class="btn btn-dark" onclick="router.go('shop')">View All Products →</button></div>
+          <div style="text-align:center;margin-top:3rem"><button class="btn btn-dark" onclick="router.go('shop')">${State.t('view_all')}</button></div>
         </div>
       </section>
 
       <section class="section why-section">
         <div class="container">
-          <div class="section-title"><h2 style="color:#fff">WHY CHOOSE <span style="color:var(--orange)">SHADOW</span></h2><span class="accent-line"></span><p style="color:#868e96">Six reasons thousands of customers trust us</p></div>
+          <div class="section-title"><h2 style="color:#fff">${State.t('why_title')}</h2><span class="accent-line"></span><p style="color:#868e96">${State.t('why_sub')}</p></div>
           <div class="why-grid">${whyUs.map(w => `<div class="why-card"><div class="why-icon">${w.icon}</div><h4>${w.title}</h4><p>${w.text}</p></div>`).join('')}</div>
         </div>
       </section>
 
       <section class="section testimonials-section">
         <div class="container">
-          <div class="section-title"><h2>CUSTOMER STORIES</h2><span class="accent-line"></span><p>Real experiences from our community</p></div>
+          <div class="section-title"><h2>${State.t('testimonials_title')}</h2><span class="accent-line"></span><p>${State.t('testimonials_sub')}</p></div>
           <div class="testimonials-grid">
             ${DB.testimonials.map(t => `
               <div class="testimonial-card">
@@ -668,26 +965,40 @@ const Pages = {
         </div>
       </section>
 
+      <section class="section" style="background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/hero_innovation.png'); background-size:cover; background-attachment:fixed; padding:100px 0; color:#fff">
+        <div class="container" style="max-width:800px; text-align:center">
+          <div style="font-family:var(--font-display); font-size:1.2rem; color:var(--orange); letter-spacing:3px; margin-bottom:1rem; text-transform:uppercase">Exclusive Signature Series</div>
+          <h2 style="font-family:var(--font-display); font-size:3.5rem; line-height:1.1; margin-bottom:1.5rem; letter-spacing:1px">${State.t('bespoke_title')}</h2>
+          <p style="font-size:1.2rem; color:#ccc; margin-bottom:2.5rem; line-height:1.6">${State.t('bespoke_sub')}</p>
+          <div style="display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap">
+            <div style="text-align:center"><div style="font-size:2rem; margin-bottom:0.5rem">🎨</div><div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1px">${State.t('frame_color')}</div></div>
+            <div style="text-align:center"><div style="font-size:2rem; margin-bottom:0.5rem">📱</div><div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1px">${State.t('tech_mount')}</div></div>
+            <div style="text-align:center"><div style="font-size:2rem; margin-bottom:0.5rem">💡</div><div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1px">${State.t('led_kit')}</div></div>
+          </div>
+          <button class="btn btn-primary" style="margin-top:3rem; padding:1rem 3rem" onclick="router.goShop('electric')">Enter the Lab ›</button>
+        </div>
+      </section>
+
       <section style="padding:60px 0;background:var(--black)">
         <div class="container">
-          <div class="section-title"><h2 style="color:#fff">TRUSTED <span style="color:var(--orange)">PARTNER BRANDS</span></h2><span class="accent-line"></span><p style="color:#868e96">We source from the world's leading wheelchair manufacturers and customise every chair for your unique needs</p></div>
-          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:2.5rem">
+          <div class="section-title"><h2 style="color:#fff">${State.t('partner_title')}</h2><span class="accent-line"></span><p style="color:#868e96">${State.t('partner_sub')}</p></div>
+          <div class="partner-brands-grid">
             ${DB.partners.map(p => `
               <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:2rem 1.5rem;text-align:center;transition:all var(--transition);border-top:3px solid ${p.color}" onmouseover="this.style.background='rgba(255,255,255,.09)'" onmouseout="this.style.background='rgba(255,255,255,.05)'">
                 <div style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:2px;color:#fff;line-height:1">${p.name}</div>
               </div>
             `).join('')}
           </div>
-          <p style="text-align:center;color:#868e96;font-size:.85rem">Shadow Wheelchairs is an authorised dealer and customisation partner for all the brands above. Every chair is sourced, assessed, and adapted specifically for your requirements.</p>
+          <p style="text-align:center;color:#868e96;font-size:.85rem">${State.t('partner_footer')}</p>
         </div>
       </section>
 
       <div class="cta-banner">
         <div class="container cta-inner">
-          <div><h2>NOT SURE WHICH CHAIR IS RIGHT?</h2><p>Talk to our mobility specialist — free, no-obligation consultation.</p></div>
+          <div><h2>${State.t('cta_h2')}</h2><p>${State.t('cta_p')}</p></div>
           <div style="display:flex;gap:1rem;flex-wrap:wrap">
-            <a href="tel:+919445610803" class="btn btn-dark">📞 Call Us Now</a>
-            <button class="btn btn-outline btn-dark" onclick="router.go('contact')">Send Enquiry</button>
+            <a href="tel:+919445610803" class="btn btn-dark">📞 ${State.t('call_now')}</a>
+            <button class="btn btn-outline btn-dark" onclick="router.go('contact')">${State.t('send_enquiry')}</button>
           </div>
         </div>
       </div>
@@ -698,26 +1009,26 @@ const Pages = {
   shop(filterCat = 'all') {
     State.shopFilter = filterCat;
     const cats = [
-      { id: 'all', label: 'All Products' },
-      { id: 'electric', label: 'Electric' },
-      { id: 'manual', label: 'Manual' },
-      { id: 'custom', label: 'Custom Seating' }
+      { id: 'all', label: State.t('all_products') },
+      { id: 'electric', label: State.t('shop_elec') },
+      { id: 'manual', label: State.t('shop_man') },
+      { id: 'custom', label: State.t('custom_seating') }
     ];
 
     const filtered = filterCat === 'all' ? State.products : State.products.filter(p => p.category === filterCat);
 
     return `
       <div class="container section-sm">
-        <div class="section-title"><h2>OUR PRODUCTS</h2><span class="accent-line"></span><p>Browse our full range of wheelchairs and mobility aids</p></div>
+        <div class="section-title"><h2>${State.t('our_products')}</h2><span class="accent-line"></span><p>Browse our full range of wheelchairs and mobility aids</p></div>
 
         <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2rem;justify-content:center">
           ${cats.map(c => `<button class="btn btn-sm ${State.shopFilter === c.id ? 'btn-primary' : 'btn-outline'}" onclick="Pages.filterShop('${c.id}')">${c.label}</button>`).join('')}
         </div>
 
         <div class="sort-bar">
-          <span style="font-size:.88rem;color:#868e96">${filtered.length} product${filtered.length !== 1 ? 's' : ''} found</span>
+          <span style="font-size:.88rem;color:#868e96">${filtered.length} ${State.t('items_found')}</span>
           <select onchange="Pages.sortShop(this.value)">
-            <option value="default">Default Sort</option>
+            <option value="default">${State.t('default_sort')}</option>
             <option value="price-asc">Price: Low to High</option>
             <option value="price-desc">Price: High to Low</option>
             <option value="name">Name A–Z</option>
@@ -790,11 +1101,14 @@ const Pages = {
             </ul>
 
             <div class="detail-actions">
-              <button class="btn btn-primary" onclick="Cart.add(${p.id}); UI.openCart()" ${p.status === 'outofstock' ? 'disabled' : ''}>
+              <button class="btn btn-primary action-btn-main" onclick="Cart.add(${p.id}); UI.openCart()" ${p.status === 'outofstock' ? 'disabled' : ''}>
                 ${p.status === 'outofstock' ? 'Unavailable' : 'Express Interest'}
               </button>
-              <button class="btn btn-outline" onclick="Wishlist.toggle(${p.id})" id="detail-wish-btn">
-                ${Wishlist.has(p.id) ? '❤ Wishlisted' : '♡ Wishlist'}
+              <button class="btn btn-outline action-btn-sub" onclick="router.goBespoke(${p.id})">
+                ✨ ${State.t('customize')}
+              </button>
+              <button class="btn btn-outline action-btn-sub" id="detail-wish-btn" onclick="Wishlist.toggle(${p.id})">
+                ${Wishlist.has(p.id) ? '❤ ' + State.t('Wishlist') : '♡ ' + State.t('Wishlist')}
               </button>
             </div>
 
@@ -815,6 +1129,12 @@ const Pages = {
             <div class="product-grid">${related.map(r => productCard(r)).join('')}</div>
           </div>
         ` : ''}
+
+        <div style="background:linear-gradient(135deg, var(--black) 0%, #333 100%);padding:4rem 2rem;border-radius:var(--radius-lg);color:#fff;text-align:center;margin:4rem 0">
+          <h2 style="font-family:var(--font-display);font-size:2.5rem;letter-spacing:1px;margin-bottom:1rem">${State.t('bespoke_title')}</h2>
+          <p style="color:#ccc;margin-bottom:2rem;font-size:1.1rem">${State.t('bespoke_sub')}</p>
+          <button class="btn btn-primary" onclick="router.goBespoke(${p.id})">✨ ${State.t('add_bespoke')}</button>
+        </div>
       </div>
     `;
   },
@@ -1613,16 +1933,15 @@ const Pages = {
       <div class="about-hero">
         <div class="container about-hero-inner">
           <div>
-            <h1>EMPOWERING <span>INDEPENDENCE</span><br>SINCE 2015</h1>
-            <p style="margin-top:1.2rem">Shadow Wheelchairs & Seating was founded by Johnson, a passionate occupational therapist and mobility specialist based in Chennai. Our mission is simple: to provide every customer with the exact mobility solution their body and lifestyle demands — no compromises, no off-the-shelf limits.</p>
-            <p style="margin-top:1rem">We work with customers, caregivers, hospitals, and physiotherapists across India to deliver customised wheelchairs, postural seating, and hospice care equipment — with genuine compassion at every step.</p>
+            <h1>${State.t('about_title')}</h1>
+            <p style="margin-top:1.2rem">${State.t('about_p')}</p>
             <div style="display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap">
               <button class="btn btn-primary" onclick="router.go('contact')">Get in Touch</button>
               <button class="btn btn-outline" style="border-color:rgba(255,255,255,.3);color:#fff" onclick="router.go('shop')">Browse Products</button>
             </div>
           </div>
           <div class="about-img" style="background:rgba(255,255,255,.06);padding:2rem;border-radius:var(--radius-lg)">
-            <img src="assets/electric_wc.png" alt="Shadow Wheelchairs">
+            <img src="assets/hero_manual.png" alt="Shadow Wheelchairs">
           </div>
         </div>
       </div>
@@ -1654,7 +1973,7 @@ const Pages = {
     const u = State.user || {};
     return `
       <div class="container section-sm">
-        <div class="section-title"><h2>CONTACT US</h2><span class="accent-line"></span><p>Reach out with any questions or to book a free consultation</p></div>
+        <div class="section-title"><h2>${State.t('contact_h2')}</h2><span class="accent-line"></span><p>${State.t('contact_p')}</p></div>
         <div class="contact-grid">
           <div class="contact-info-box">
             <h3>Get In Touch</h3>
@@ -1695,6 +2014,110 @@ const Pages = {
     e.preventDefault();
     UI.toast('✅ Message sent! We\'ll contact you within 24 hours.');
     e.target.reset();
+  },
+
+  // ---- BESPOKE LAB ----
+  bespoke(id) {
+    const p = State.getProduct(id);
+    if (!p) return '<div class="container section-sm">Product not found</div>';
+
+    if (!State.bespokeConfig) {
+      State.bespokeConfig = { color: 'default', acc: [], colorHex: '#f8f9fa' };
+    }
+
+    const colors = [
+      { id: 'default', hex: '#f8f9fa', label: 'Clinical White' },
+      { id: 'matte_black', hex: '#1C1C1C', label: State.t('matte_black') },
+      { id: 'racing_red', hex: '#e03131', label: State.t('racing_red') },
+      { id: 'gold', hex: '#D98B00', label: State.t('gold') },
+      { id: 'navy', hex: '#1A237E', label: State.t('navy') }
+    ];
+
+    const accs = [
+      { id: 'tech_mount', icon: '📱', label: State.t('tech_mount') },
+      { id: 'signature_bag', icon: '🎒', label: State.t('signature_bag') },
+      { id: 'power_hub', icon: '🔌', label: State.t('power_hub') }
+    ];
+
+    const currentConf = State.bespokeConfig;
+
+    return `
+      <div class="container section-sm">
+        <div style="margin-bottom:2rem">
+          <button class="btn btn-sm btn-outline" onclick="router.goProduct(${p.id})">← Back to Product</button>
+        </div>
+
+        <div class="bespoke-container">
+          <div class="bespoke-visual">
+            <div class="color-glow"></div>
+            <img src="${p.image}" class="bespoke-main-img" id="bespoke-img" style="border-radius: 24px">
+            <div style="margin-top:2rem;text-align:center;position:relative;z-index:2">
+              <h2 style="font-family:var(--font-display);font-size:2.2rem;letter-spacing:1px">${p.name}</h2>
+              <p style="color:var(--gray-500);text-transform:uppercase;font-size:0.75rem;letter-spacing:2px;font-weight:700">Signature Bespoke Edition</p>
+            </div>
+          </div>
+
+          <div class="bespoke-sidebar">
+            <div>
+              <div class="custom-section-title">🎨 ${State.t('frame_color')}</div>
+              <div class="color-circles">
+                ${colors.map(c => `
+                  <button class="color-btn ${currentConf.color === c.id ? 'active' : ''}" 
+                          style="background:${c.hex}" 
+                          onclick="Pages.updateBespokeColor('${c.id}', '${c.hex}', ${p.id})"
+                          title="${c.label}"></button>
+                `).join('')}
+              </div>
+              <div style="font-size:.85rem;color:var(--gray-700)">Selected: <strong>${colors.find(c => c.id === currentConf.color).label}</strong></div>
+            </div>
+
+            <div>
+              <div class="custom-section-title">🛠 ${State.t('accessories')}</div>
+              <p style="font-size:0.85rem; color:var(--gray-500); margin-bottom:1rem;">These premium items can also be included with your build:</p>
+              <div class="accessory-list">
+                ${accs.map(a => `
+                  <div class="accessory-item" style="cursor:default">
+                    <div class="accessory-icon">${a.icon}</div>
+                    <div class="accessory-info">
+                      <h5>${a.label}</h5>
+                      <span>Clinical Grade Utility</span>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <div class="bespoke-total">
+              <div class="conf-summary" style="margin-bottom:1rem;color:var(--gray-500)">
+                Custom accessories will be discussed and added during your consultation.
+              </div>
+              <div class="price-row">
+                <h5 style="margin:0">Bespoke Estimate</h5>
+                <span>Quote on Request</span>
+              </div>
+              <button class="btn btn-primary btn-full" onclick="Pages.submitBespoke(${p.id})">🚀 Finalize Configuration</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  },
+
+  updateBespokeColor(id, hex, pId) {
+    State.bespokeConfig.color = id;
+    State.bespokeConfig.colorHex = hex;
+    router.goBespoke(pId);
+  },
+
+  submitBespoke(id) {
+    const p = State.getProduct(id);
+    const msg = `Bespoke configuration for ${p.name}: Color: ${State.bespokeConfig.color}. I am also interested in the available premium accessories.`;
+    UI.toast("Configuration Saved! Our specialist will contact you soon.", "success");
+    router.go('contact');
+    setTimeout(() => {
+      const msgArea = document.querySelector('textarea[name="message"]');
+      if (msgArea) msgArea.value = msg;
+    }, 500);
   }
 };
 
@@ -1714,77 +2137,63 @@ function statusPill(status) {
 // ===================== ROUTER =====================
 const router = {
   async go(page, ...args) {
-    // SECURITY GUARD: Only block home-redirect if admin is still authed or secret flag is intentionally set
-    const currentHash = window.location.hash.substring(1);
-    const isAdminAuthed = localStorage.getItem('sw_admin_authed') === 'true';
-    if (page === 'home' && isAdminAuthed && (currentHash === 'admin-login' || currentHash === 'admin' || window._is_secret_route)) {
-      return;
-    }
+    const parts = page.split('/');
+    const route = parts[0];
+    const id = parts[1];
 
     UI.toggleMenu(false);
     clearInterval(State.heroTimer);
     window.scrollTo({ top: 0, behavior: 'smooth' });
     const content = document.getElementById('main-content');
 
-    // Restore opacity if it was dimmed by the high-priority filter
-    if (window._is_secret_route) document.body.style.opacity = '1';
-
-    // Reset ALL nav links first (fixes persistent 'Home' highlight)
-    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-
-    // Clear content immediately for secret routes to prevent overlap
-    if (page === 'admin' || page === 'admin-login') {
-      content.innerHTML = '<div class="container section-sm" style="text-align:center;padding:100px 20px;"><div class="spinner"></div><p style="margin-top:1rem;color:var(--gray-500)">Accessing Secure Clinical Portal...</p></div>';
+    if (route === 'bespoke' && id) {
+      content.innerHTML = Pages.bespoke(id);
+      UI.setActive('products');
+    } else if (route === 'home') {
+      content.innerHTML = Pages.home();
+      Hero.start();
+      UI.setActive('home');
+    } else if (route === 'shop') {
+      content.innerHTML = Pages.shop(State.shopFilter || id || 'all');
+      UI.setActive('products');
+    } else if (Pages[route]) {
+      const html = await Pages[route](id);
+      if (html) content.innerHTML = html;
+      UI.setActive(route);
+    } else {
+      content.innerHTML = '<div class="container section-sm"><h2>Page not found</h2></div>';
     }
 
-    UI.setActive(page);
-
-    try {
-      if (page === 'home') {
-        content.innerHTML = Pages.home();
-        Hero.start();
-      } else if (page === 'shop') {
-        content.innerHTML = Pages.shop(State.shopFilter);
-      } else if (page === 'about') {
-        content.innerHTML = Pages.about();
-      } else if (page === 'contact') {
-        content.innerHTML = Pages.contact();
-      } else if (page === 'user') {
-        content.innerHTML = Pages.user();
-      } else if (page === 'admin' || page === 'admin-login') {
-        const html = await Pages.admin();
-        if (html) content.innerHTML = html;
-      } else if (page === 'checkout') {
-        content.innerHTML = Pages.checkout();
-      } else {
-        content.innerHTML = '<div class="container section-sm"><h2>Page not found</h2></div>';
-      }
-    } catch (err) {
-      console.error("Routing Error:", err);
-      content.innerHTML = `<div class="container section-sm"><h2>Error loading page</h2><p>${err.message}</p></div>`;
-    }
-
-    // Render footer
     document.getElementById('site-footer').innerHTML = renderFooter();
   },
 
   goShop(cat) {
     State.shopFilter = cat;
-    UI.toggleMenu(false);
-    this.go('shop');
+    this.go(`shop/${cat}`);
   },
 
   goProduct(id) {
-    clearInterval(State.heroTimer);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    UI.toggleMenu(false);
+    window.location.hash = `product/${id}`;
     document.getElementById('main-content').innerHTML = Pages.product(id);
     document.getElementById('site-footer').innerHTML = renderFooter();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    UI.setActive('products');
+  },
+
+  goBespoke(id) {
+    if (!id) {
+      this.goShop('electric');
+      UI.toast("Select a chair to begin customisation", "info");
+      return;
+    }
+    window.location.hash = `bespoke/${id}`;
+    this.go(`bespoke/${id}`);
   }
 };
 
 // ===================== FOOTER =====================
 function renderFooter() {
+  const t = (k) => State.t(k);
   return `
     <div class="footer">
       <div class="container">
@@ -1799,37 +2208,37 @@ function renderFooter() {
                 <span class="logo-sub">WHEELCHAIRS & SEATING</span>
               </div>
             </div>
-            <p>Empowering mobility and enriching lives across India, one customer at a time.</p>
+            <p>${t('footer_p')}</p>
           </div>
           <div class="footer-col">
-            <h5>Products</h5>
+            <h5>${t('products')}</h5>
             <ul>
-              <li><a href="#" onclick="router.goShop('electric')">Electric Wheelchairs</a></li>
-              <li><a href="#" onclick="router.goShop('manual')">Manual Wheelchairs</a></li>
-              <li><a href="#" onclick="router.goShop('custom')">Custom Seating</a></li>
+              <li><a href="#" onclick="router.goShop('electric')">${t('shop_elec')}</a></li>
+              <li><a href="#" onclick="router.goShop('manual')">${t('shop_man')}</a></li>
+              <li><a href="#" onclick="router.goShop('custom')">${t('custom_seating')}</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h5>Company</h5>
+            <h5>${t('company')}</h5>
             <ul>
-              <li><a href="#" onclick="router.go('about')">About Us</a></li>
-              <li><a href="#" onclick="router.go('contact')">Contact Us</a></li>
-              <li><a href="#" onclick="router.go('user')">My Account</a></li>
+              <li><a href="#" onclick="router.go('about')">${t('about')}</a></li>
+              <li><a href="#" onclick="router.go('contact')">${t('contact')}</a></li>
+              <li><a href="#" onclick="router.go('user')">${t('account')}</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h5>Contact</h5>
+            <h5>${t('contact')}</h5>
             <ul>
               <li><a href="tel:+919445610803">📞 +91 94456 10803</a></li>
               <li><a href="mailto:johnson.shadowwheelchairs@outlook.com">✉ johnson.shadowwheelchairs@outlook.com</a></li>
-              <li><a href="#">📍 36, Professor Sanjeevi St, Mylapore, Chennai – 600004</a></li>
-              <li style="color:#868e96;font-size:.82rem;margin-top:.5rem">Mon–Sat: 10:30 AM – 5:00 PM</li>
+              <li><a href="#">📍 ${t('address')}</a></li>
+              <li style="color:#868e96;font-size:.82rem;margin-top:.5rem">${t('footer_hours')}</li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <span>© 2026 Shadow Wheelchairs & Seating. All Rights Reserved.</span>
-          <span style="color:#868e96">Made with ❤ for patient care in India</span>
+          <span>${t('copyright')}</span>
+          <span style="color:#868e96">${t('made_with')}</span>
         </div>
       </div>
     </div>
@@ -1838,6 +2247,8 @@ function renderFooter() {
 
 // Init function to handle routing
 const initApp = () => {
+  State.applyTheme();
+  State.updateStaticStrings();
   UI.updateBadges();
   UI.renderCartDrawer();
 

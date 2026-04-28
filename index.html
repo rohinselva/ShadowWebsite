@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Bebas+Neue&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=whatsapp_fix_v2" />
 </head>
 
 <body>
@@ -19,8 +19,14 @@
   <!-- ===== TOP BAR ===== -->
   <div class="topbar">
     <div class="topbar-inner">
-      <span>📍 36, Professor Sanjeevi St, Mylapore, Chennai – 600004</span>
+      <span id="top-address">📍 36, Professor Sanjeevi St, Mylapore, Chennai – 600004</span>
       <div class="topbar-right">
+        <select id="lang-select" onchange="State.setLang(this.value)"
+          style="background:transparent;border:none;color:inherit;font-size:0.8rem;cursor:pointer;outline:none">
+          <option value="en">English</option>
+          <option value="ta">தமிழ்</option>
+          <option value="hi">हिंदी</option>
+        </select>
         <a href="tel:+919445610803">📞 +91 94456 10803</a>
         <a href="mailto:johnson.shadowwheelchairs@outlook.com">✉ johnson.shadowwheelchairs@outlook.com</a>
       </div>
@@ -43,17 +49,22 @@
 
       <!-- Nav Links -->
       <ul class="nav-links" id="nav-links">
-        <li><a href="#home" onclick="router.go('home')">Home</a></li>
+        <li><a href="#home" id="nav-home" onclick="router.go('home')">Home</a></li>
         <li class="has-dropdown">
-          <a href="#shop" onclick="router.go('shop')">Products ▾</a>
+          <a href="#shop" id="nav-products" onclick="router.go('shop')">Products ▾</a>
           <ul class="dropdown">
-            <li><a href="#shop" onclick="router.goShop('electric')">Electric Wheelchairs</a></li>
-            <li><a href="#shop" onclick="router.goShop('manual')">Manual Wheelchairs</a></li>
-            <li><a href="#shop" onclick="router.goShop('custom')">Custom Seating</a></li>
+            <li><a href="#shop" id="nav-elec" onclick="router.goShop('electric')">Electric Wheelchairs</a></li>
+            <li><a href="#shop" id="nav-man" onclick="router.goShop('manual')">Manual Wheelchairs</a></li>
+            <li><a href="#shop" id="nav-custom" onclick="router.goShop('custom')">Custom Seating</a></li>
+            <li>
+              <hr style="border:0;border-top:1px solid var(--gray-200);margin:5px 0">
+            </li>
+            <li><a href="#bespoke" id="nav-bespoke" onclick="router.goBespoke()"
+                style="color:var(--orange);font-weight:700">✨ Custom Bespoke Lab</a></li>
           </ul>
         </li>
-        <li><a href="#about" onclick="router.go('about')">About Us</a></li>
-        <li><a href="#contact" onclick="router.go('contact')">Contact</a></li>
+        <li><a href="#about" id="nav-about" onclick="router.go('about')">About Us</a></li>
+        <li><a href="#contact" id="nav-contact" onclick="router.go('contact')">Contact</a></li>
       </ul>
 
       <!-- Actions -->
@@ -167,6 +178,13 @@
       window._is_secret_route = true;
     }
   </script>
+  <!-- ===== WhatsApp Float ===== -->
+  <a href="https://wa.me/919445610803?text=Hi!%20I%27m%20interested%20in%20a%20wheelchair%20solution.%20Can%20you%20help%20me%20with%20some%20information?"
+    class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <span class="pulse"></span>
+    <span style="font-size: 1.8rem;">💬</span>
+  </a>
+
   <script src="app.js?v=hours_update_v3" type="module"></script>
 </body>
 
