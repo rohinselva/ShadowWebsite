@@ -911,6 +911,14 @@ ul {
   transform: scale(1.1) translateY(-10px);
 }
 
+/* Hide the 'Rainbow' text labels from the bottom of specific product images */
+img[src*="rainbow_8.jpg"], 
+img[src*="rainbow_7.jpg"] {
+  clip-path: inset(0 0 22% 0) !important;
+  object-fit: cover !important;
+  object-position: center 10%;
+}
+
 .product-badge {
   position: absolute;
   top: 12px;
@@ -2288,6 +2296,10 @@ ul {
     font-size: 0.72rem;
   }
 
+  .topbar-right #lang-select {
+    display: none;
+  }
+
   .topbar-right {
     display: flex;
     flex-direction: row;
@@ -2448,6 +2460,46 @@ ul {
 
   .stats-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Mobile Language Selector */
+  .mobile-only {
+    display: block !important;
+  }
+
+  .mobile-lang-li {
+    border-top: 1px solid var(--gray-200);
+    margin-top: 10px;
+    padding: 15px 24px;
+  }
+
+  .mobile-lang-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--gray-700);
+  }
+
+  .mobile-lang-wrap select {
+    background: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--black);
+    outline: none;
+    cursor: pointer;
+    flex: 1;
+  }
+}
+
+/* Desktop Hiding Helper */
+@media (min-width: 701px) {
+  .mobile-only {
+    display: none !important;
   }
 }
 
@@ -2707,22 +2759,147 @@ ul {
   margin-bottom: 1rem;
 }
 
-/* Responsive Partner Grid */
+/* ===== CINEMATIC 3D PARTNER GALLERY ===== */
 .partner-brands-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
-  margin-bottom: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+  margin: 4rem 0;
 }
 
-@media (max-width: 900px) {
-  .partner-brands-grid {
-    grid-template-columns: repeat(2, 1fr);
+.partner-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  padding: 4rem 2rem;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  backdrop-filter: blur(12px);
+  text-align: center;
+  cursor: pointer;
+}
+
+.partner-card::after {
+  content: attr(data-initial);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateZ(-1px);
+  font-family: var(--font-display);
+  font-size: 12rem;
+  color: rgba(255, 255, 255, 0.02);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.partner-card:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.07) 100%);
+  border-color: rgba(255, 255, 255, 0.32);
+  box-shadow:
+    -20px 20px 50px rgba(0, 0, 0, 0.5),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.brand-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  pointer-events: none;
+}
+
+.brand-emblem {
+  width: 90px;
+  height: 90px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: #fff;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.brand-emblem img {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
+}
+
+.partner-card:hover .brand-emblem {
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.partner-card h4 {
+  color: #ffffff !important;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.55);
+}
+
+.partner-card p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  font-weight: 600;
+  max-width: 240px;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.partner-card:hover p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.partner-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--brand-color);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-weight: 900;
+}
+
+/* Background Horizon Animation */
+.scanning-horizon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      rgba(245, 160, 0, 0.03) 50%,
+      transparent 100%);
+  background-size: 100% 200%;
+  animation: scan 8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scan {
+  0% {
+    background-position: 0 100%;
   }
-}
 
-@media (max-width: 500px) {
-  .partner-brands-grid {
-    grid-template-columns: 1fr;
+  100% {
+    background-position: 0 -100%;
   }
 }

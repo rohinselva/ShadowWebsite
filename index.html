@@ -65,6 +65,16 @@
         </li>
         <li><a href="#about" id="nav-about" onclick="router.go('about')">About Us</a></li>
         <li><a href="#contact" id="nav-contact" onclick="router.go('contact')">Contact</a></li>
+        <li class="mobile-only mobile-lang-li">
+          <div class="mobile-lang-wrap">
+            <span>🌐 Language:</span>
+            <select id="lang-select-mobile" onchange="State.setLang(this.value)">
+              <option value="en">English</option>
+              <option value="ta">தமிழ்</option>
+              <option value="hi">हिंदी</option>
+            </select>
+          </div>
+        </li>
       </ul>
 
       <!-- Actions -->
@@ -147,7 +157,7 @@
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
     import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, onAuthStateChanged }
       from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
-    import { getFirestore, collection, addDoc, getDocs, onSnapshot, query, where, serverTimestamp, doc, getDoc, updateDoc, setDoc }
+    import { getFirestore, collection, addDoc, getDocs, onSnapshot, query, where, serverTimestamp, doc, getDoc, updateDoc, setDoc, deleteDoc }
       from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
     const firebaseConfig = {
       apiKey: "AIzaSyBJ40D9p6kDYppYwiF5umgsOoFORJrDIt0",
@@ -164,7 +174,7 @@
     const db = getFirestore(app);
     window._firebaseAuth = auth;
     window._firebaseDb = db;
-    window._firebaseFirestore = { collection, addDoc, getDocs, onSnapshot, query, where, serverTimestamp, doc, getDoc, updateDoc, setDoc };
+    window._firebaseFirestore = { collection, addDoc, getDocs, onSnapshot, query, where, serverTimestamp, doc, getDoc, updateDoc, setDoc, deleteDoc };
     window._firebaseSignIn = signInWithEmailAndPassword;
     window._firebaseCreateUser = createUserWithEmailAndPassword;
     window._firebaseSignOut = signOut;

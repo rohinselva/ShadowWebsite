@@ -48,12 +48,12 @@ const utils = {
 // ===================== DATA STORE =====================
 const DB = {
   partners: [
-    { name: 'Neomotion', tagline: 'Live Life to the Fullest', color: '#D94F1E', initial: 'N', website: 'https://neomotion.in' },
-    { name: 'Karma', tagline: 'A Better Wheelchair, A Better Life', color: '#00897B', initial: 'K', website: 'https://www.karma-medical.com' },
-    { name: 'Forza Freedom', tagline: 'Wheelchair World', color: '#1565C0', initial: 'FF', website: 'https://forzawheelchairs.com' },
-    { name: 'Phoenix Instinct', tagline: 'Rising Above Adversity', color: '#B45309', initial: 'PI', website: 'https://phoenixinstinct.com' },
-    { name: 'Vermeiren', tagline: 'Mobility Solutions Since 1956', color: '#1A237E', initial: 'V', website: 'https://www.vermeiren.com' },
-    { name: 'Invacare', tagline: "Making Life's Experiences Possible", color: '#1B5E20', initial: 'Inv', website: 'https://www.invacare.com' }
+    { name: 'Neomotion', tagline: 'Live Life to the Fullest', color: '#D94F1E', initial: 'N', logo: 'assets/partner_neomotion.png', website: 'https://www.neomotion.in/' },
+    { name: 'Karma', tagline: 'A Better Wheelchair, A Better Life', color: '#00897B', initial: 'K', logo: 'assets/partner_karma.png', website: 'https://www.karmamedical.com/en-in/' },
+    { name: 'Forza Freedom', tagline: 'Wheelchair World', color: '#1565C0', initial: 'FF', logo: 'assets/partner_forza.png', website: 'https://forzamedi.com/' },
+    { name: 'Phoenix Instinct', tagline: 'Rising Above Adversity', color: '#B45309', initial: 'PI', logo: 'assets/partner_phoenix.png', website: 'https://www.phoenixinstinct.com/' },
+    { name: 'Vermeiren', tagline: 'Mobility Solutions Since 1956', color: '#1A237E', initial: 'V', logo: 'assets/partner_vermeiren.png', website: 'https://www.vermeiren.co.in/' },
+    { name: 'Invacare', tagline: "Making Life's Experiences Possible", color: '#1B5E20', initial: 'Inv', logo: 'assets/partner_invacare.png', website: 'https://www.invacare.com/' }
   ],
   products: [
     {
@@ -165,6 +165,86 @@ const DB = {
       desc_hi: "एक हल्का, फोल्ड करने योग्य इलेक्ट्रिक व्हीलचेयर। यह यात्रा और शॉपिंग मॉल के लिए बिल्कुल सही है।",
       specs: { "Type": "Power Mobility", "Weight": "24 kg (with battery)", "Folding": "Single-button fold", "Battery": "Lithium-Ion", "Motors": "Brushless DC", "Casters": "Solid 8-inch" },
       features: ["Featherweight construction", "Brushless motor efficiency", "Ultra-compact folding", "Travel-safe battery"]
+    },
+    {
+      id: 12, name: "Phoenix Arise Standing", brand: "Phoenix", category: "manual",
+      status: "instock", stock: 3, image: "assets/arise_standing.png",
+      badge: "Standing Assist", badge_ta: "நிற்கும் உதவி", badge_hi: "स्टैंडिंग असिस्ट", price: 0, mrp: 0,
+      desc: "A revolutionary manual wheelchair that allows users to rise into a standing position independently. Features a gas-spring assisted mechanism and heavy-duty stability for a 75-degree standing angle.",
+      desc_ta: "பயனர்கள் சுதந்திரமாக எழுந்து நிற்கும் நிலைக்கு மாற உதவும் ஒரு புரட்சிகர கைமுறை சக்கர நாற்காலி. இது 75 டிகிரி கோணத்தில் பாதுகாப்பாக நிற்க உதவும் கேஸ்-ஸ்பிரிங் பொறிமுறையைக் கொண்டுள்ளது.",
+      desc_hi: "एक क्रांतिकारी मैनुअल व्हीलचेयर जो उपयोगकर्ताओं को स्वतंत्र रूप से खड़े होने की स्थिति में आने की अनुमति देती है। इसमें 75-डिग्री खड़े होने के कोण के लिए गैस-स्प्रिंग सहायता तंत्र है।",
+      specs: { "Type": "Standing Manual", "Standing Angle": "Up to 75°", "Mechanism": "Gas-spring Assist", "Capacity": "110 kg", "Stability": "Long Wheelbase", "Safety": "Accidental Standing Prevention" },
+      features: ["Independent standing transition", "Adjustable gas-spring tension", "Growth-flexible seating", "Enhanced urban manoeuvrability"]
+    },
+    {
+      id: 13, name: "Commode (Rainbow 8)", brand: "Rainbow", category: "manual",
+      status: "instock", stock: 5, image: "assets/rainbow_8.jpeg",
+      badge: "Full Support", badge_ta: "முழு ஆதரவு", badge_hi: "पूर्ण समर्थन", price: 0, mrp: 0,
+      desc: "A premium reclining wheelchair with an integrated commode system. Features a high backrest, headrest, and calf support for maximum patient comfort during long-term use.",
+      desc_ta: "ஒரு பிரீமியம் சாய்வு சக்கர நாற்காலி மற்றும் ஒருங்கிணைந்த கம்மோடு வசதி கொண்டது. நீண்ட கால பயன்பாட்டிற்கு ஏற்றது.",
+      desc_hi: "एक प्रीमियम रिक्लाइनिंग व्हीलचेयर जिसमें एकीकृत कमोड सिस्टम है। इसमें रोगी के आराम के लिए हाई बैकरेस्ट और हेडरेस्ट है।",
+      specs: { "Type": "Reclining Commode", "Frame": "Chrome Plated Steel", "Backrest": "High Back Reclining", "Footrest": "Elevating", "Commode": "U-cut with pot" },
+      features: ["Full recline mechanism", "Detachable headrest", "Integrated commode bucket", "Padded calf support"]
+    },
+    {
+      id: 14, name: "Semi-Fowler Hospital Cot", brand: "Shadow", category: "accessories",
+      status: "instock", stock: 8, image: "assets/hospital_bed.jpg",
+      badge: "Clinical Grade", badge_ta: "மருத்துவ தரம்", badge_hi: "क्लिनिकल ग्रेड", price: 0, mrp: 0,
+      desc: "A durable manual hospital bed with a single crank mechanism for backrest adjustment. Designed for home care and clinical environments with collapsible side rails.",
+      desc_ta: "பின்புறத்தை சரிசெய்ய ஒரு கிராங்க் பொறிமுறையைக் கொண்ட கைமுறை மருத்துவமனை படுக்கை. வீட்டு பராமரிப்பிற்கு ஏற்றது.",
+      desc_hi: "बैकरेस्ट समायोजन के लिए सिंगल क्रैंक तंत्र के साथ एक मैनुअल अस्पताल बिस्तर। घरेलू देखभाल के लिए डिज़ाइन किया गया।",
+      specs: { "Type": "Manual Fowler Bed", "Mechanism": "Single Crank", "Rails": "Collapsible Side Rails", "Frame": "Powder Coated Steel", "Wheels": "Medical Casters with Brakes" },
+      features: ["Easy crank operation", "Sturdy side protection", "Smooth mobility wheels", "High weight capacity"]
+    },
+    {
+      id: 15, name: "Stainless Steel Wheelchair", brand: "Shadow", category: "manual",
+      status: "instock", stock: 12, image: "assets/stainless_steel_wc.jpg",
+      badge: "Rust Proof", badge_ta: "துருப்பிடிக்காதது", badge_hi: "जंग रोधी", price: 0, mrp: 0,
+      desc: "A heavy-duty manual wheelchair constructed from high-grade stainless steel. Ideal for humid environments or clinical settings where frequent cleaning is required.",
+      desc_ta: "உயர்தர துருப்பிடிக்காத எஃகு மூலம் தயாரிக்கப்பட்ட ஒரு கனரக கைமுறை சக்கர நாற்காலி. நீண்ட காலம் உழைக்கக்கூடியது.",
+      desc_hi: "उच्च श्रेणी के स्टेनलेस स्टील से निर्मित एक हैवी-ड्यूटी मैनुअल व्हीलचेयर। जंग रोधी और टिकाऊ।",
+      specs: { "Frame": "Stainless Steel", "Seat": "Heavy Duty Canvas", "Rear Wheels": "Solid Rubber", "Weight": "19 kg", "Capacity": "120 kg" },
+      features: ["Corrosion resistant frame", "Foldable design", "Low maintenance", "Durable upholstery"]
+    },
+    {
+      id: 16, name: "Commode (Rainbow 7)", brand: "Rainbow", category: "manual",
+      status: "instock", stock: 10, image: "assets/rainbow_7.jpg",
+      badge: "Versatile", badge_ta: "பன்முகத்தன்மை", badge_hi: "बहुमुखी", price: 0, mrp: 0,
+      desc: "Standard manual wheelchair with built-in commode functionality. Offers independent mobility with the convenience of a toilet chair, featuring a U-cut seat and removable bucket.",
+      desc_ta: "ஒருங்கிணைந்த கம்மோடு வசதி கொண்ட நிலையான கைமுறை சக்கர நாற்காலி. சுயமாக இயங்கக்கூடியது.",
+      desc_hi: "निर्मित कमोड कार्यक्षमता के साथ मानक मैनुअल व्हीलचेयर। स्वतंत्र गतिशीलता और सुविधा प्रदान करता है।",
+      specs: { "Type": "Commode Wheelchair", "Frame": "Steel with Chrome", "Seat": "U-cut Cushion", "Rear Wheels": "Mag Wheels", "Brakes": "Dual Hand Brakes" },
+      features: ["Dual-purpose design", "Removable commode pot", "Easy-to-clean cushion", "Folding frame"]
+    },
+    {
+      id: 17, name: "Basic Commode Wheelchair", brand: "Shadow", category: "manual",
+      status: "instock", stock: 15, image: "assets/mobile_commode.jpg",
+      badge: "Compact", badge_ta: "சிறியது", badge_hi: "कॉम्पैक्ट", price: 0, mrp: 0,
+      desc: "A compact and highly mobile commode chair designed for indoor use. Features four swivel casters with locks for easy movement between rooms and bathrooms.",
+      desc_ta: "உட்புற பயன்பாட்டிற்காக வடிவமைக்கப்பட்ட ஒரு சிறிய மற்றும் மொபைல் கம்மோடு நாற்காலி. குளியலறையில் பயன்படுத்த ஏற்றது.",
+      desc_hi: "इनडोर उपयोग के लिए डिज़ाइन की गई एक कॉम्पैक्ट और मोबाइल कमोड कुर्सी। कमरे और बाथरूम के बीच आसान आवाजाही के लिए उपयुक्त।",
+      specs: { "Type": "Mobile Commode", "Frame": "Water Resistant Steel", "Wheels": "4 Swivel Casters", "Locks": "Rear Wheel Locks", "Seat": "Padded Commode Seat" },
+      features: ["Easy indoor transit", "Fits over standard toilets", "Locked safety casters", "Water-resistant finish"]
+    },
+    {
+      id: 18, name: "Mattress for Fowler Cot", brand: "Shadow", category: "accessories",
+      status: "instock", stock: 20, image: "assets/fowler_mattress.jpg",
+      badge: "Ergonomic", badge_ta: "பொருத்தமானது", badge_hi: "एर्गोनोमिक", price: 0, mrp: 0,
+      desc: "High-density 4-inch sectional mattress designed specifically for Fowler/Hospital beds. Flexible sections allow the mattress to follow the bed's adjustments without wrinkling.",
+      desc_ta: "மருத்துவமனை படுக்கைகளுக்காக வடிவமைக்கப்பட்ட 4-அங்குல மெத்தை. படுக்கையின் மாற்றங்களுக்கு ஏற்ப வளையும் தன்மை கொண்டது.",
+      desc_hi: "अस्पताल के बिस्तरों के लिए डिज़ाइन किया गया 4-इंच का गद्दा। बिस्तर के समायोजन के अनुसार लचीला।",
+      specs: { "Type": "Sectional Mattress", "Thickness": "4 Inches", "Core": "High Density Foam", "Cover": "Rexine (Waterproof)", "Compatibility": "Fowler/Semi-Fowler Beds" },
+      features: ["Pressure redistribution", "Waterproof rexine cover", "Sectional flexibility", "Long-lasting foam"]
+    },
+    {
+      id: 19, name: "Anti-Decubitus Air Bed", brand: "Shadow", category: "accessories",
+      status: "instock", stock: 25, image: "assets/air_mattress.jpg",
+      badge: "Bedsore Care", badge_ta: "படுக்கைப்புண் பராமரிப்பு", badge_hi: "बेडसोर केयर", price: 0, mrp: 0,
+      desc: "Advanced medical-grade bubble air mattress with an adjustable pressure pump. Helps prevent and treat bedsores by continuously changing pressure points for bedridden patients.",
+      desc_ta: "சரிசெய்யக்கூடிய பிரஷர் பம்ப் கொண்ட மருத்துவ தர காற்று மெத்தை. படுக்கைப்புண்களைத் தடுக்க உதவுகிறது.",
+      desc_hi: "समायोज्य दबाव पंप के साथ उन्नत मेडिकल-ग्रेड बबल एयर गद्दा। बेडसोर्स को रोकने में मदद करता है।",
+      specs: { "Type": "Bubble Air Mattress", "Pump": "Low Noise Electric", "Material": "Medical Grade PVC", "Cycle Time": "6-10 Minutes", "Capacity": "130 kg" },
+      features: ["Alternating pressure pump", "Ultra-quiet operation", "Adjustable pressure knob", "Repair kit included"]
     }
   ],
 
@@ -172,9 +252,24 @@ const DB = {
   ],
 
   testimonials: [
-    { text: "Shadow Wheelchairs changed my father's life. The custom postural seating was perfectly fitted and the team visited our home for assessment. Exceptional service!", name: "Preethi M.", location: "Adyar, Chennai", rating: 5 },
-    { text: "I rented a wheelchair for my mother after her surgery. Delivery was prompt, the chair was spotless and exactly what we needed. Will definitely buy from them!", name: "Karthik R.", location: "Mylapore, Chennai", rating: 5 },
-    { text: "Johnson sir's knowledge of postural support is unmatched. He helped us pick the right chair for our son with cerebral palsy. We're very grateful.", name: "Vimala S.", location: "Tambaram, Chennai", rating: 5 }
+    {
+      text: "Shadow Wheelchairs changed my father's life. The custom postural seating was perfectly fitted and the team visited our home for assessment. Exceptional service!",
+      text_ta: "ஷேடோ வீல்சேர்ஸ் என் தந்தையின் வாழ்க்கையை மாற்றியது. தனிப்பயனாக்கப்பட்ட இருக்கை அவருக்கு சரியாக பொருந்தியது மற்றும் மதிப்பீட்டிற்காக அவர்கள் எங்கள் வீட்டிற்கே வந்தனர். சிறப்பான சேவை!",
+      text_hi: "शैडो व्हीलचेयर ने मेरे पिता का जीवन बदल दिया। कस्टम पोस्टुरल सीटिंग पूरी तरह से फिट थी और टीम मूल्यांकन के लिए हमारे घर आई थी। असाधारण सेवा!",
+      name: "Preethi M.", location: "Adyar, Chennai", rating: 5
+    },
+    {
+      text: "I rented a wheelchair for my mother after her surgery. Delivery was prompt, the chair was spotless and exactly what we needed. Will definitely buy from them!",
+      text_ta: "என் தாயின் அறுவை சிகிச்சைக்குப் பிறகு ஒரு சக்கர நாற்காலியை வாடகைக்கு எடுத்தேன். சரியான நேரத்தில் டெலிவரி செய்யப்பட்டது, நாற்காலி மிகவும் சுத்தமாகவும் எங்களுக்குத் தேவையானதாகவும் இருந்தது. நிச்சயமாக இவர்களிடம் வாங்குவேன்!",
+      text_hi: "मेरी मां की सर्जरी के बाद मैंने एक व्हीलचेयर किराए पर ली थी। डिलीवरी समय पर हुई, कुर्सी बेदाग थी और बिल्कुल वैसी ही थी जैसी हमें चाहिए थी। उनसे जरूर खरीदूंगा!",
+      name: "Karthik R.", location: "Mylapore, Chennai", rating: 5
+    },
+    {
+      text: "Johnson sir's knowledge of postural support is unmatched. He helped us pick the right chair for our son with cerebral palsy. We're very grateful.",
+      text_ta: "ஜான்சன் சாரிற்கு உடல் நிலை ஆதரவு பற்றிய அறிவு இணையற்றது. செரிப்ரல் பால்சி உள்ள எங்கள் மகனுக்கு சரியான நாற்காலியைத் தேர்வு செய்ய அவர் எங்களுக்கு உதவினார். நாங்கள் மிகவும் நன்றியுள்ளவர்களாக இருக்கிறோம்.",
+      text_hi: "पोस्तुरल सपोर्ट के बारे में जॉनसन सर का ज्ञान बेजोड़ है। उन्होंने सेरेब्रल पाल्सी वाले हमारे बेटे के लिए सही कुर्सी चुनने में हमारी मदद की। हम बहुत आभारी हैं।",
+      name: "Vimala S.", location: "Tambaram, Chennai", rating: 5
+    }
   ],
 
   registeredUsers: [
@@ -244,7 +339,17 @@ const i18n = {
     led_kit: "LED Underglow Kit",
     weather_shield: "Weather Shield (Umbrella)",
     power_hub: "Power Hub (Extra USB)",
-    customize: "Customize"
+    customize: "Customize",
+    accessories_label: "Accessories",
+    shop_acc: "Accessories",
+    default_sort: "Default",
+    newest: "Newest Arrivals",
+    filter_by_cat: "Categories",
+    price_low: "Price: Low to High",
+    price_high: "Price: High to Low",
+    filter_by_price: "Filter by Price",
+    our_products: "Our Products",
+    wishlist: "Wishlist"
   },
   ta: {
     address: "36, புரொபசர் சஞ்சீவி தெரு, மயிலாப்பூர், சென்னை – 600004",
@@ -308,7 +413,17 @@ const i18n = {
     led_kit: "எல்இடி அண்டர்குளோ கிட்",
     weather_shield: "வெதர் ஷீல்ட் (குடை)",
     power_hub: "பவர் ஹப் (கூடுதல் யூஎஸ்பி)",
-    customize: "தனிப்பயனாக்கு"
+    customize: "தனிப்பயனாக்கு",
+    accessories_label: "பாகங்கள்",
+    shop_acc: "பாகங்கள்",
+    default_sort: "இயல்புநிலை",
+    newest: "புதிய வரவுகள்",
+    filter_by_cat: "வகைகள்",
+    price_low: "விலை: குறைந்ததிலிருந்து அதிகம்",
+    price_high: "விலை: அதிகபட்சத்திலிருந்து குறைவு",
+    filter_by_price: "விலை அடிப்படையில் வடிப்பான்",
+    our_products: "எங்கள் தயாரிப்புகள்",
+    wishlist: "விருப்பப்பட்டியல்"
   },
   hi: {
     address: "36, प्रोफेसर संजीव स्ट्रीट, मायलापुर, चेन्नई - 600004",
@@ -372,7 +487,17 @@ const i18n = {
     led_kit: "एलईडी अंडरग्लो किट",
     weather_shield: "वेदर शील्ड (छाता)",
     power_hub: "पावर हब (अतिरिक्त यूएसबी)",
-    customize: "कस्टमाइज़ करें"
+    customize: "कस्टमाइज़ करें",
+    accessories_label: "एक्सेसरीज",
+    shop_acc: "एक्सेसरीज",
+    default_sort: "डिफ़ॉल्ट",
+    newest: "नवीनतम उत्पाद",
+    filter_by_cat: "श्रेणियां",
+    price_low: "कीमत: कम से अधिक",
+    price_high: "कीमत: अधिक से कम",
+    filter_by_price: "कीमत के आधार पर फिल्टर",
+    our_products: "हमारे उत्पाद",
+    wishlist: "इच्छा सूची"
   }
 };
 
@@ -382,7 +507,7 @@ const State = {
   cart: JSON.parse(localStorage.getItem('sw_cart') || '[]'),
   wishlist: JSON.parse(localStorage.getItem('sw_wishlist') || '[]'),
   user: JSON.parse(localStorage.getItem('sw_user') || 'null'),
-  products: (localStorage.getItem('sw_products_v14') && JSON.parse(localStorage.getItem('sw_products_v14')).length) ? JSON.parse(localStorage.getItem('sw_products_v14')) : DB.products,
+  products: (localStorage.getItem('sw_products_v15') && JSON.parse(localStorage.getItem('sw_products_v15')).length) ? JSON.parse(localStorage.getItem('sw_products_v15')) : DB.products,
   orders: (localStorage.getItem('sw_orders') && JSON.parse(localStorage.getItem('sw_orders')).length) ? JSON.parse(localStorage.getItem('sw_orders')) : DB.orders,
   registeredUsers: (localStorage.getItem('sw_registered_users') && JSON.parse(localStorage.getItem('sw_registered_users')).length) ? JSON.parse(localStorage.getItem('sw_registered_users')) : DB.registeredUsers,
 
@@ -400,7 +525,7 @@ const State = {
     localStorage.setItem('sw_cart', JSON.stringify(this.cart));
     localStorage.setItem('sw_wishlist', JSON.stringify(this.wishlist));
     localStorage.setItem('sw_user', JSON.stringify(this.user));
-    localStorage.setItem('sw_products_v14', JSON.stringify(this.products));
+    localStorage.setItem('sw_products_v15', JSON.stringify(this.products));
     localStorage.setItem('sw_orders', JSON.stringify(this.orders));
     localStorage.setItem('sw_registered_users', JSON.stringify(this.registeredUsers || []));
     localStorage.setItem('sw_lang', this.lang);
@@ -424,6 +549,8 @@ const State = {
   updateStaticStrings() {
     const sel = document.getElementById('lang-select');
     if (sel) sel.value = this.lang;
+    const selMobile = document.getElementById('lang-select-mobile');
+    if (selMobile) selMobile.value = this.lang;
 
     document.title = (this.lang === 'ta' ? 'ஷேடோ வீல்சேர்ஸ்' : (this.lang === 'hi' ? 'शैडो व्हीलचेयर' : 'Shadow Wheelchairs')) + ' | Chennai';
 
@@ -792,7 +919,7 @@ const Hero = {
       badge: { en: "Shadow Innovation", ta: "ஷேடோ கண்டுபிடிப்பு", hi: "शैडो इनोवेशन" },
       title: { en: "BEYOND <span class='highlight'>BOUNDARIES</span>", ta: "எல்லைகளுக்கு <span class='highlight'>அப்பால்</span>", hi: "सीमाओं के <span class='highlight'>पार</span>" },
       sub: { en: "Revolutionary devices designed to overcome any obstacle, including stairs.", ta: "படிக்கட்டுகள் உட்பட எந்தவொரு தடையையும் கடக்க வடிவமைக்கப்பட்ட புரட்சிகர சாதனங்கள்.", hi: "सीढ़ियों सहित किसी भी बाधा को दूर करने के लिए डिज़ाइन किए गए क्रांतिकारी उपकरण।" },
-      img: "assets/hero_innovation.png",
+      img: "assets/hero_innovation_v3.png",
       btnLabel: { en: "Explore", ta: "ஆராய்ந்து பாருங்கள்", hi: "एक्सप्लोर करें" },
       category: "electric"
     }
@@ -871,7 +998,7 @@ function productCard(p) {
           ${p.brand ? `<span style="font-size:.68rem;padding:2px 8px;background:rgba(245,160,0,.12);color:var(--orange-dark);border-radius:50px;font-weight:800;white-space:nowrap">${utils.h(p.brand)}</span>` : ''}
         </div>
         <h3 onclick="router.goProduct(${p.id})">${tn(p, 'name')}</h3>
-        <p class="desc">${tn(p, 'desc').substring(0, 80)}...</p>
+        <p class="desc">${(tn(p, 'desc') || '').substring(0, 80)}...</p>
         <div class="product-footer">
           <button class="btn btn-outline btn-sm btn-full" onclick="Pages.quickEnquiry(${p.id})" ${!canBuy ? 'disabled' : ''}>
             ${canBuy ? (l === 'ta' ? 'விருப்பம் காட்டு' : (l === 'hi' ? 'दिखाए रुचि' : 'Show Interest')) : (l === 'ta' ? 'கிடைக்கவில்லை' : (l === 'hi' ? 'अनुपलब्ध' : 'Unavailable'))}
@@ -888,10 +1015,11 @@ const Pages = {
   // ---- HOME ----
   home() {
     const l = State.lang;
+    const tn = (obj, key) => obj[key + '_' + l] || obj[key];
     const cats = [
       { id: 'electric', icon: '⚡', label: l === 'ta' ? 'மின்சார சக்கர நாற்காலிகள்' : (l === 'hi' ? 'इलेक्ट्रिक व्हीलचेयर' : 'Electric Wheelchairs'), count: State.products.filter(p => p.category === 'electric').length },
       { id: 'manual', icon: '♿', label: l === 'ta' ? 'கைமுறை சக்கர நாற்காலிகள்' : (l === 'hi' ? 'मैनुअल व्हीलचेयर' : 'Manual Wheelchairs'), count: State.products.filter(p => p.category === 'manual').length },
-      { id: 'custom', icon: '🎯', label: l === 'ta' ? 'தனிப்பயன் இருக்கை' : (l === 'hi' ? 'कस्टम सीटिंग' : 'Custom Seating'), count: State.products.filter(p => p.category === 'custom').length },
+      { id: 'accessories', icon: '📦', label: l === 'ta' ? 'பாகங்கள்' : (l === 'hi' ? 'एक्सेसरीज' : 'Accessories'), count: State.products.filter(p => p.category === 'accessories').length },
     ];
 
     const whyUs = [
@@ -954,7 +1082,7 @@ const Pages = {
             ${DB.testimonials.map(t => `
               <div class="testimonial-card">
                 <div class="stars">${'★'.repeat(t.rating)}</div>
-                <p>"${t.text}"</p>
+                <p>"${tn(t, 'text')}"</p>
                 <div class="testimonial-author">
                   <div class="author-avatar">${t.name.charAt(0)}</div>
                   <div><div class="author-name">${t.name}</div><div class="author-location">📍 ${t.location}</div></div>
@@ -965,7 +1093,7 @@ const Pages = {
         </div>
       </section>
 
-      <section class="section" style="background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/hero_innovation.png'); background-size:cover; background-attachment:fixed; padding:100px 0; color:#fff">
+      <section class="section" style="background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/hero_innovation_v3.png'); background-size:cover; background-attachment:fixed; padding:100px 0; color:#fff">
         <div class="container" style="max-width:800px; text-align:center">
           <div style="font-family:var(--font-display); font-size:1.2rem; color:var(--orange); letter-spacing:3px; margin-bottom:1rem; text-transform:uppercase">Exclusive Signature Series</div>
           <h2 style="font-family:var(--font-display); font-size:3.5rem; line-height:1.1; margin-bottom:1.5rem; letter-spacing:1px">${State.t('bespoke_title')}</h2>
@@ -979,13 +1107,18 @@ const Pages = {
         </div>
       </section>
 
-      <section style="padding:60px 0;background:var(--black)">
-        <div class="container">
+      <section style="padding:120px 0; background: #0a0a0a; position: relative; overflow: hidden;">
+        <div class="scanning-horizon"></div>
+        <div class="container" style="position: relative; z-index: 2;">
           <div class="section-title"><h2 style="color:#fff">${State.t('partner_title')}</h2><span class="accent-line"></span><p style="color:#868e96">${State.t('partner_sub')}</p></div>
           <div class="partner-brands-grid">
             ${DB.partners.map(p => `
-              <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:2rem 1.5rem;text-align:center;transition:all var(--transition);border-top:3px solid ${p.color}" onmouseover="this.style.background='rgba(255,255,255,.09)'" onmouseout="this.style.background='rgba(255,255,255,.05)'">
-                <div style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:2px;color:#fff;line-height:1">${p.name}</div>
+              <div class="partner-card" style="--brand-color: ${p.color}" data-initial="${p.initial}" onclick="window.open('${p.website}', '_blank')">
+                <div class="partner-badge">Official Partner</div>
+                <div class="brand-layer">
+                  <h4>${p.name}</h4>
+                  <p>${p.tagline}</p>
+                </div>
               </div>
             `).join('')}
           </div>
@@ -1012,14 +1145,14 @@ const Pages = {
       { id: 'all', label: State.t('all_products') },
       { id: 'electric', label: State.t('shop_elec') },
       { id: 'manual', label: State.t('shop_man') },
-      { id: 'custom', label: State.t('custom_seating') }
+      { id: 'accessories', label: State.t('shop_acc') }
     ];
 
     const filtered = filterCat === 'all' ? State.products : State.products.filter(p => p.category === filterCat);
 
     return `
       <div class="container section-sm">
-        <div class="section-title"><h2>${State.t('our_products')}</h2><span class="accent-line"></span><p>Browse our full range of wheelchairs and mobility aids</p></div>
+        <div class="section-title"><h2>${State.t('our products')}</h2><span class="accent-line"></span><p>Browse our full range of wheelchairs and mobility aids</p></div>
 
         <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2rem;justify-content:center">
           ${cats.map(c => `<button class="btn btn-sm ${State.shopFilter === c.id ? 'btn-primary' : 'btn-outline'}" onclick="Pages.filterShop('${c.id}')">${c.label}</button>`).join('')}
@@ -1060,7 +1193,9 @@ const Pages = {
   // ---- PRODUCT DETAIL ----
   product(id) {
     const p = State.getProduct(id);
-    if (!p) return '<div class="container section-sm"><p>Product not found. <button class="btn btn-outline" onclick="router.go(\'shop\')">Back to Shop</button></p></div>';
+    if (!p) return `<div class="container section-sm"><p>Product not found. <button class="btn btn-outline" onclick="router.go('shop')">Back to Shop</button></p></div>`;
+    const l = State.lang;
+    const tn = (obj, key) => obj[key + '_' + l] || obj[key];
 
     const related = State.products.filter(r => r.category === p.category && r.id !== p.id).slice(0, 3);
 
@@ -1069,12 +1204,12 @@ const Pages = {
         <div style="font-size:.82rem;color:#868e96;margin-bottom:1.5rem">
           <span style="cursor:pointer;color:var(--orange)" onclick="router.go('home')">Home</span> › 
           <span style="cursor:pointer;color:var(--orange)" onclick="router.goShop('${p.category}')">${utils.h(p.category.charAt(0).toUpperCase() + p.category.slice(1))}</span> › 
-          ${utils.h(p.name)}
+          ${utils.h(tn(p, 'name'))}
         </div>
 
         <div class="detail-layout">
           <div class="detail-gallery">
-            <div class="main-img"><img src="${p.image}" alt="${p.name}" id="main-prod-img"></div>
+            <div class="main-img"><img src="${p.image}" alt="${utils.h(tn(p, 'name'))}" id="main-prod-img"></div>
             <div class="thumb-row">
               <div class="thumb active" onclick="document.getElementById('main-prod-img').src='${p.image}'"><img src="${p.image}" alt="view 1"></div>
             </div>
@@ -1082,7 +1217,7 @@ const Pages = {
 
           <div class="detail-info">
             <div class="cat-breadcrumb">${utils.h(p.category.charAt(0).toUpperCase() + p.category.slice(1))} ${p.isRental ? '· Rental' : ''}</div>
-            <h1 style="margin-bottom:0.4rem">${utils.h(p.name)}</h1>
+            <h1 style="margin-bottom:0.4rem">${utils.h(tn(p, 'name'))}</h1>
             <div class="product-success-meta">
 
               <div class="detail-badge-wrap">
@@ -1094,11 +1229,13 @@ const Pages = {
 
             <div style="font-size:.9rem;color:var(--orange-dark);font-weight:700;margin-bottom:1.5rem;background:var(--orange-pale);display:inline-block;padding:4px 12px;border-radius:50px;margin-top:0.5rem">Contact for Quote</div>
             
-            <p class="detail-desc">${utils.h(p.desc)}</p>
+            <p class="detail-desc">${utils.h(tn(p, 'desc'))}</p>
 
-            <ul style="margin-bottom:1.5rem;display:flex;flex-direction:column;gap:6px">
-              ${p.features.map(f => `<li style="font-size:.88rem;color:#495057">✅ ${utils.h(f)}</li>`).join('')}
-            </ul>
+            ${p.features && Array.isArray(p.features) ? `
+              <ul style="margin-bottom:1.5rem;display:flex;flex-direction:column;gap:6px">
+                ${p.features.map(f => `<li style="font-size:.88rem;color:#495057">✅ ${utils.h(f)}</li>`).join('')}
+              </ul>
+            ` : ''}
 
             <div class="detail-actions">
               <button class="btn btn-primary action-btn-main" onclick="Cart.add(${p.id}); UI.openCart()" ${p.status === 'outofstock' ? 'disabled' : ''}>
@@ -1116,10 +1253,12 @@ const Pages = {
               📞 <a href="tel:+919445610803" style="color:var(--orange-dark);font-weight:700">Call +91 94456 10803</a> for immediate assistance.
             </div>
 
-            <h4 style="margin-bottom:1rem;font-size:.95rem">Technical Specifications</h4>
-            <table class="spec-table">
-              ${Object.entries(p.specs).map(([k, v]) => `<tr><td>${utils.h(k)}</td><td>${utils.h(v)}</td></tr>`).join('')}
-            </table>
+            ${p.specs ? `
+              <h4 style="margin-bottom:1rem;font-size:.95rem">Technical Specifications</h4>
+              <table class="spec-table">
+                ${Object.entries(p.specs).map(([k, v]) => `<tr><td>${utils.h(k)}</td><td>${utils.h(v)}</td></tr>`).join('')}
+              </table>
+            ` : ''}
           </div>
         </div>
 
